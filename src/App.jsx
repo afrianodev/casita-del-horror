@@ -15,14 +15,14 @@ function App() {
   };
 
   return (
-    <div className='container bg-black'>
+    <div className='bg-gray-900 h-[100vh] w-full overflow-x-hidden'>
       <Header />
       {selectedMovie ? (
         <div>
           <iframe
             src={selectedMovie}
             title="Movie Player"
-            className="w-full h-screen"
+            className="w-[90vw] h-[80vh] mx-auto mt-4"
             frameBorder="0"
             allow="autoplay; encrypted-media; fullscreen"
           ></iframe>
@@ -30,11 +30,13 @@ function App() {
             onClick={handleBack}
             className="absolute top-4 left-4 bg-gray-800 text-white p-2 rounded"
           >
-            Back
+            Volver
           </button>
         </div>
       ) : (
+        <>
         <MoviesCont onMovieSelect={handleMovieSelect} />
+        </>
       )}
     </div>
   );

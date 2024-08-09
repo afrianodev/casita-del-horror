@@ -10,10 +10,31 @@
 
 body {
   font-family: "Shantell Sans", cursive;
+  height: 100vh;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+
+/* .swiper {
+  width: 100%;
+  height: 300px;
+} */
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .swiper {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.mySwiper {
+  width: 100%;
+  height: 400px; /* Adjust as needed */
 }

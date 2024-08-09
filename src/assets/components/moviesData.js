@@ -1,0 +1,26 @@
+export const movies = [
+    { src: "https://m.media-amazon.com/images/M/MV5BYTY0NTZlZjYtNWRmZi00MGRjLTk4ZDctMjE4NjBiZTUyNGNhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg", title: "Mártires", url: "https://mega.nz/embed/xS0USBIL#yFk893roH4F-7RyJLtuZzcIH3m8wV698QYSwUnrsULU" },
+    { src: "https://pics.filmaffinity.com/Ghostland-186804143-mmed.jpg", title: "Pesadilla en el infierno", url: "https://mega.nz/embed/1WFQ2AqT#SSOEARkKK0RLiqFU-GUxI8zYa9ua3QfiUAuH95e-niY" },
+    { src: "https://pics.filmaffinity.com/the_poughkeepsie_tapes-852900426-large.jpg", title: "las cintas de poughkeepsie", url: "https://mega.nz/embed/xC111QrJ#_05OhQuuaEDYyd5WYGVz4q14wsfENwqAyuZerq-Lx7c" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/d1893dd7510bfba7585259259a4005cac499e935c1e6791684b1887a0d07fc1d.jpg", title: "La venganza de la casa del lago", url: "https://mega.nz/embed/dG91zLZA#tA0GQ9rejdZwCBxnrHjMPqGjy3nmXXF57a8-THLmz5s" },
+    { src: "https://pics.filmaffinity.com/funny_games_u_s-831316674-large.jpg", title: "Juegos Sádicos", url: "https://mega.nz/embed/Eb8k2JAA#JMLpq8TGtBfOsZKiSAN3_q__vnQ8YQG27nY407_UF5k" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/9dad153232e2599f3f86a07e9b6e463a4c0a6726758bf14c21eb1da97b5ddf63.jpg", title: "El frio en los huesos", url: "https://mega.nz/embed/lW0W0AoR#fvX8VwDH1BvqfWXJHPBFp4OnQTOD3DCHiYCyvWNZfG0" },
+    { src: "https://m.media-amazon.com/images/M/MV5BMDRhNDhmYzItNDYzNC00YTc1LTkzYTUtMjE4ZDNhZGZkNjRkXkEyXkFqcGdeQXVyNjk3ODU5MDY@._V1_.jpg", title: "Alarido", url: "https://mega.nz/embed/tP93mL5T#VSzo1G_2CXPQI5bqUDXfLXbRTY5VKPxIEItUw5yth4Y" },
+    { src: "https://m.media-amazon.com/images/M/MV5BODk0ZDI3ZjMtMTAwNC00MzY2LWI4OGItY2JmMmU0NmY4MGFjXkEyXkFqcGdeQXVyMzkwMTMxNDQ@._V1_.jpg", title: "El secreto de Marrowbone", url: "https://mega.nz/embed/tb13TYrJ#TY5nN47QS_QarFzAq12PK86bGauU81C0PFNORqIdxzw" },
+    { src: "https://m.media-amazon.com/images/M/MV5BZDcyM2ZiYTYtMmFkNC00NDMxLThhMjctZjcyOTdlMGMyMjVhXkEyXkFqcGdeQXVyMzg2MzE2OTE@._V1_.jpg", title: "El Extraño", url: "https://mega.nz/embed/8fNEiJhI#p8ledKnBiH1IREBYOJibJ29VMpdnDxHx4pu_K7JXbPU" },
+    { src: "https://m.media-amazon.com/images/M/MV5BYjMzZDBkMWItMzM4MC00YzNmLTgzNzctMmUwOGYyZTA5MDZlXkEyXkFqcGdeQXVyMzQwMTY2Nzk@._V1_FMjpg_UX1080_.jpg", title: "Demoniaca", url: "https://mega.nz/embed/gOcEDT7I#ezHn8eeSjYboKwh6p2N6I7wopNKLXumpKzafZSrRwkg" },
+    { src: "https://m.media-amazon.com/images/M/MV5BMWZhZjYyZmItMGRmNS00OTdmLWJjNDQtNjc1YzYyYzA5ZDE0XkEyXkFqcGdeQXVyMzQwMTY2Nzk@._V1_.jpg", title: "Good Boy", url: "https://mega.nz/embed/lClSnahD#Ofr5uEKzLo7KPt75imh9GPmhN5ePcd7rN2dVixPr-8Y" },
+    { src: "https://m.media-amazon.com/images/M/MV5BNmMwZDg3ZDEtOWVkMi00MGM2LWI0YmItZjQ5NGViMTViMDhiXkEyXkFqcGdeQXVyNjQzMDExMDk@._V1_.jpg", title: "La última cosa que Mary vio", url: "https://mega.nz/embed/1bMGkTzL#OgMxbXQIVaby0G-zbcQT3_xyisT5K3Ysf7ZFaAihoPo" },
+    { src: "https://m.media-amazon.com/images/M/MV5BNWQyMzA3NDItMDRhZi00MWUxLTgyYmYtM2I1NTI3ZTE2NjY5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg", title: "Empty Man", url: "https://mega.nz/embed/hf0kTSzT#zKMA6ZTkv0rNhlL4gkh1BkRjdptKxAftI7MPYfucqhU" },
+    { src: "https://m.media-amazon.com/images/M/MV5BYTQ4MDVmODUtZDA5ZC00ZDE5LTgwN2ItOTQ5YzBlOTcwMTRhXkEyXkFqcGdeQXVyMjY5ODI4NDk@._V1_.jpg", title: "El CLub del odio", url: "https://mega.nz/embed/ZTsiQLoB#0dA8PlcR_bXIU0Rtxrs12-HyRaKFotIz3OtJDPqumrI" },
+    { src: "https://www.cclm.cl/wp-content/uploads/2024/03/AFICHE-El-exorcista.jpg", title: "El Exorcista", url: "https://drive.google.com/file/d/1-dhiNn8TMvmStEaTnaPLnLhiCj6F2S_e/preview" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/71bfb694a478414eff36ac9245d8a1c1baeb6418c01fc48506eefbca075e5a10.png", title: "Relic: Herencia maldita", url: "https://mega.nz/embed/kD01GQqR#pXPGpErRVu1YuabB4NJKXwIdQD54vU1e3rfMywfSQ20" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/a25489f875a64d1a352130b85b5b3da1e1b1fcc71f105c0fa66cddb4d9f29c27.jpg", title: "El ciempiés humano", url: "https://mega.nz/embed/AfNHBRqB#T1_bLRcQsgp_ABHyMLXsok7mZrfWpsGaISv81eP-YYg" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/482b96ad3ff30f475f92e7e54f05f821a768e10782705b5b4683a9a4d1007f84.jpg", title: "El ciempiés humano 2", url: "https://mega.nz/embed/QeVkAK6Y#9MVf36E8I8c_1_Oi-AtSSXptRrqE-o0IxATd2Ozkp7U" },
+    { src: "https://pics.filmaffinity.com/Pesadilla_en_Elm_Street-790429633-large.jpg", title: "Pesadilla en la calle Elm", url: "https://mega.nz/embed/QeVkAK6Y#9MVf36E8I8c_1_Oi-AtSSXptRrqE-o0IxATd2Ozkp7U" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/4ad403a60cf5fbf5d47167fbdf923443c92940950aa606e29c9660d3a8a70998.jpg", title: "Pesadilla en la calle Elm 2", url: "https://mega.nz/embed/QeVkAK6Y#9MVf36E8I8c_1_Oi-AtSSXptRrqE-o0IxATd2Ozkp7U" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/058d164cead01821a52b2d8dd5f985a4f0599b9c3028378c3b1bda5afa83978b.jpg", title: "Pesadilla en la calle Elm 3", url: "https://mega.nz/embed/QeVkAK6Y#9MVf36E8I8c_1_Oi-AtSSXptRrqE-o0IxATd2Ozkp7U" },
+    { src: "https://musicart.xboxlive.com/7/6b211100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080", title: "Pesadilla en la calle Elm 4", url: "https://mega.nz/embed/QeVkAK6Y#9MVf36E8I8c_1_Oi-AtSSXptRrqE-o0IxATd2Ozkp7U" },
+  ];
+
+  
