@@ -5,9 +5,11 @@ import Header from './assets/components/Header';
 
 function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-  const handleMovieSelect = (movieUrl) => {
+  const handleMovieSelect = (movieUrl, movieUrlIndex) => {
     setSelectedMovie(movieUrl);
+    setCurrentSlideIndex(movieUrlIndex);
   };
 
   const handleBack = () => {
@@ -34,9 +36,10 @@ function App() {
           </button>
         </div>
       ) : (
-        <>
-        <MoviesCont onMovieSelect={handleMovieSelect} />
-        </>
+        <MoviesCont
+          onMovieSelect={(movieUrl, movieUrlIndex) => handleMovieSelect(movieUrl, movieUrlIndex)}
+          initialSlide={currentSlideIndex}
+        />
       )}
     </div>
   );
