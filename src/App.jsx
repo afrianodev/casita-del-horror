@@ -17,14 +17,14 @@ function App() {
   };
 
   return (
-    <div className='bg-gray-900 h-[100vh] w-full overflow-x-hidden'>
+    <div className='bg-gray-900 h-[100vh] w-[100vw] overflow-x-hidden'>
       <Header />
       {selectedMovie ? (
         <div>
           <iframe
             src={selectedMovie}
             title="Movie Player"
-            className="w-[90vw] h-[80vh] mx-auto mt-4"
+            className="w-[100vw] h-[80vh] mx-auto mt-4"
             frameBorder="0"
             allow="autoplay; encrypted-media; fullscreen"
           ></iframe>

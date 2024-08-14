@@ -10,7 +10,8 @@
 
 body {
   font-family: "Shantell Sans", cursive;
-  height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
 }
 
 

@@ -1,4 +1,8 @@
 export const movies = [
+    { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYJ-ViXCRGD5HdnztpwkmUWhosEI5t6XA293-Wb72ag1JoXATwcJGYU04xakDlvGlLo3k&usqp=CAU", title: "El ente", url: "https://drive.google.com/uc?export=view&id=1K9sds5456EAQ46T_GOMh9-Isy4_Q1SJd" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/6c19aa6206250244678c9431785ecf1bea7e4c15e58184e0be18f1923e342a7e.jpg", title: "Un extraño en el bosque", url: "https://drive.google.com/uc?export=view&id=16O3YEMD8NNp6jrTySolRH6wR4JyLvuer" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/9598a9f1e25fd6a93d3d6c533910d7cc4e9f78883c9c89f68b1bb4c457761235.jpg", title: "Observados", url: "https://drive.google.com/file/d/1SLPBoY9X7hIQKNhG2LKTWN8OdMf2ygIo/view?usp=sharing" },
+    { src: "https://es.web.img3.acsta.net/pictures/210/166/21016645_20130629102545069.jpg", title: "La masacre de Texas", url: "https://drive.google.com/uc?export=view&id=1vI4xMpr4egBT-t3Muf5W_Z2Dz8pHX2Df" },
     { src: "https://m.media-amazon.com/images/M/MV5BYTY0NTZlZjYtNWRmZi00MGRjLTk4ZDctMjE4NjBiZTUyNGNhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg", title: "Mártires", url: "https://drive.google.com/file/d/1UrZkjgApyfiUvYiMrRMyYVYDGNZgtNqb/preview" },
     { src: "https://pics.filmaffinity.com/Ghostland-186804143-mmed.jpg", title: "Pesadilla en el infierno", url: "https://drive.google.com/file/d/1B3KZBNcDRql7csa2i1L9uVqzKdmoGIvj/preview" },
     { src: "https://pics.filmaffinity.com/the_poughkeepsie_tapes-852900426-large.jpg", title: "las cintas de poughkeepsie", url: "https://drive.google.com/file/d/1cfWylScrd0aZmLZX92MC88-x7-Ot6ze6/preview" },

@@ -16,25 +16,55 @@ export default function MoviesCont({ onMovieSelect, initialSlide }) {
     setCenterMovie(movies[activeIndex]);
   };
 
+  const breakpoints = {
+    // When window width is >= 640px
+    200: {
+      slidesPerView: 1,
+    },
+    // When window width is >= 768px
+    500: {
+      slidesPerView: 3,
+    },
+    // When window width is >= 1024px
+    1024: {
+      slidesPerView: 5,
+    },
+  };
+
+  // useEffect(() => {
+  //   if (swiperInstance) {
+  //     const slideIndex = initialSlide % movies.length; // Adjust for looped slides
+  //     swiperInstance.slideToLoop(slideIndex, 0, false); // Slide instantly
+  //   }
+  // }, [swiperInstance, initialSlide]);
   useEffect(() => {
-    if (swiperInstance) {
-      const slideIndex = initialSlide % movies.length; // Adjust for looped slides
-      swiperInstance.slideToLoop(slideIndex, 0, false); // Slide instantly
+    const swiperContainer = document.querySelector('.mySwiper');
+    if (swiperContainer) {
+      swiperContainer.addEventListener('touchstart', (e) => {
+        e.stopPropagation();
+      });
     }
-  }, [swiperInstance, initialSlide]);
+  }, []);
 
   return (
-    <div className="w-[98vw] h-[89vh] bg-gray-950 rounded-3xl mx-auto mt-2">
+    <div className="w-[98vw] h-[79%] bg-gray-950 rounded-3xl mx-auto mt-[2%]">
+      <div className='flex gap-2 text-white justify-center mx-2'>
+        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[35%] flex items-center justify-center'>Recomendadas del Mes</div>
+        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[20%] flex items-center justify-center'>Clasicas</div>
+        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[23%] flex items-center justify-center'>Enfermas</div>
+        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center'>Gore</div>
+      </div>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        slidesPerView={5}
+        // slidesPerView={5}
+        breakpoints={breakpoints}
         coverflowEffect={{
-          rotate: 10,
+          rotate: 30,
           stretch: -20,
           depth: 300,
           modifier: 1,
-          slideShadows: true,
+          // slideShadows: true,
         }}
         loop={true}
         keyboard={{
@@ -63,6 +93,17 @@ export default function MoviesCont({ onMovieSelect, initialSlide }) {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className='flex flex-col text-white'>
+        <h2 className='mb-2 mx-auto'>Aquí iría el titulo de la peli</h2>
+        <p className='w-[90%] mx-auto text-center'>Aqui la sinopsis de la película Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div className='flex gap-4 text-xs mt-2 mx-auto'>
+          <p>Aqui el director</p>
+          <p>Aqui el año</p>
+          <p>Tiempo de duracion</p>
+        </div>
+        <div></div>
+
+      </div>
     </div>
   );
 }
