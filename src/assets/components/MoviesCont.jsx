@@ -17,34 +17,16 @@ export default function MoviesCont({ onMovieSelect, initialSlide }) {
   };
 
   const breakpoints = {
-    // When window width is >= 640px
     200: {
       slidesPerView: 1,
     },
-    // When window width is >= 768px
     500: {
       slidesPerView: 3,
     },
-    // When window width is >= 1024px
     1024: {
       slidesPerView: 5,
     },
   };
-
-  // useEffect(() => {
-  //   if (swiperInstance) {
-  //     const slideIndex = initialSlide % movies.length; // Adjust for looped slides
-  //     swiperInstance.slideToLoop(slideIndex, 0, false); // Slide instantly
-  //   }
-  // }, [swiperInstance, initialSlide]);
-  useEffect(() => {
-    const swiperContainer = document.querySelector('.mySwiper');
-    if (swiperContainer) {
-      swiperContainer.addEventListener('touchstart', (e) => {
-        e.stopPropagation();
-      });
-    }
-  }, []);
 
   return (
     <div className="w-[98vw] h-[79%] bg-gray-950 rounded-3xl mx-auto mt-[2%]">
