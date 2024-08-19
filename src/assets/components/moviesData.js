@@ -1,4 +1,9 @@
 export const movies = [
+    { src: "https://i.pinimg.com/736x/28/71/d8/2871d88aecfc1fdad9691856c534cfb3.jpg", title: "El bebe de Rosemary", url: "https://drive.google.com/file/d/1nqQ8ENMz3YudBhUG6q_53TBrd7VUdtG4/preview" },
+    { src: "https://m.media-amazon.com/images/M/MV5BNzQyNGQxNjYtMWVmYS00ZTNhLWEyYTAtMjFiOWVjN2ZjYzdjXkEyXkFqcGc@._V1_.jpg", title: "Starve Acre", url: "https://drive.google.com/file/d/13sRMp3rJM9-uIReGGaJrYxu0tDpXa0Z3/preview" },
+    { src: "https://image.tmdb.org/t/p/original/uQBT59dMWt4FsElTWPIqbld93Ud.jpg", title: "El despertar del diablo", url: "https://drive.google.com/file/d/1NchWdYu4LuHK54p5IOQakObsyk_kPKw5/preview" },
+    { src: "https://image.tmdb.org/t/p/original/4CMvyapWAVUNT5Y93Pg4Pq3Cqhp.jpg", title: "El despertar del diablo 2", url: "https://drive.google.com/file/d/13PDK5E0WiMneEt_zvKQNvqQyoxWs1494/preview" },
+    { src: "https://m.media-amazon.com/images/S/pv-target-images/fee847153475db1d7e0d524573de5a5fbb07c72328f43e70f122118b1363b844.jpg", title: "Te veo", url: "https://drive.google.com/file/d/13kV5nTAVoGJeRR-4Z3pzx9KET2oSZ_3p/preview" },
     { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYJ-ViXCRGD5HdnztpwkmUWhosEI5t6XA293-Wb72ag1JoXATwcJGYU04xakDlvGlLo3k&usqp=CAU", title: "El ente", url: "https://drive.google.com/file/d/1K9sds5456EAQ46T_GOMh9-Isy4_Q1SJd/preview" },
     { src: "https://m.media-amazon.com/images/S/pv-target-images/6c19aa6206250244678c9431785ecf1bea7e4c15e58184e0be18f1923e342a7e.jpg", title: "Un extraño en el bosque", url: "https://drive.google.com/file/d/16O3YEMD8NNp6jrTySolRH6wR4JyLvuer/preview" },
     { src: "https://m.media-amazon.com/images/S/pv-target-images/9598a9f1e25fd6a93d3d6c533910d7cc4e9f78883c9c89f68b1bb4c457761235.jpg", title: "Observados", url: "https://drive.google.com/file/d/1SLPBoY9X7hIQKNhG2LKTWN8OdMf2ygIo/preview" },
