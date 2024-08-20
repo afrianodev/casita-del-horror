@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Keyboard, EffectCoverflow } from 'swiper/modules';
-import { movies } from './moviesData';
+import { movies } from '../../api/moviesData';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
