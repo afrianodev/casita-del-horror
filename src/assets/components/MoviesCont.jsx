@@ -31,10 +31,11 @@ export default function MoviesCont({ onMovieSelect, initialSlide }) {
   return (
     <div className="w-[98vw] h-[79%] bg-gray-950 rounded-3xl mx-auto mt-[2%]">
       <div className='flex gap-2 text-white justify-center mx-2'>
-        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[35%] flex items-center justify-center'>Recomendadas del Mes</div>
-        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[20%] flex items-center justify-center'>Clasicas</div>
-        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[23%] flex items-center justify-center'>Enfermas</div>
-        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center'>Gore</div>
+        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[35%] flex items-center justify-center'>Nuevas subidas</div>
+        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[20%] flex items-center justify-center'>Clásicos</div>
+        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[23%] flex items-center justify-center'>Psicológicas</div>
+        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center'>Sobrenatural</div>
+        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center'>Slasher</div>
       </div>
       <Swiper
         effect={'coverflow'}
