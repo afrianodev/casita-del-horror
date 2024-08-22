@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Keyboard, EffectCoverflow } from 'swiper/modules';
 import { movies } from '../../api/moviesData';
@@ -7,20 +7,58 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+let nuevoArray = movies
+
 export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange }) {
   const [activeIndex, setActiveIndex] = useState(movies[0]);
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const [centerSlide, setCenterSlide] = useState(0);
+  const [currentArray, setCurrentArray] = useState(movies);
 
-  let currentRealIndex = 0;
+  let slasherArray = movies.filter(movie => movie.categorias.includes('slasher'));
+  let clasicaArray = movies.filter(movie => movie.categorias.includes('clasica'));
+  let psicologicaArray = movies.filter(movie => movie.categorias.includes('psicologica'));
+  let sangrientaArray = movies.filter(movie => movie.categorias.includes('sangrienta'));
+  let paranormalArray = movies.filter(movie => movie.categorias.includes('paranormal'));
+  let currentMovies = movies;
+
+  const handleCategorySelect = (category) => {
+    switch (category) {
+      case 'nueva':
+        setCurrentArray(nuevoArray);
+        break;
+      case 'slasher':
+        setCurrentArray(slasherArray);
+        break;
+      case 'clasica':
+        setCurrentArray(clasicaArray);
+        break;
+      case 'psicologica':
+        setCurrentArray(psicologicaArray);
+        break;
+      case 'sangrienta':
+        setCurrentArray(sangrientaArray);
+        break;
+      case 'paranormal':
+        setCurrentArray(paranormalArray);
+        break;
+      default:
+        setCurrentArray(nuevoArray);
+    }
+  };
 
   const handleSlideChange = (e) => {
     const movingIndex = (e.realIndex);
     console.log(`This is the first slider on the Swiper: ${movingIndex}`)
     const currentSlider = (movingIndex + Math.floor(5 / 2)) % movies.length;
     console.log(`This is the center index: ${currentSlider}`);
-    currentRealIndex = currentSlider;
     setActiveIndex(movies[currentSlider]);
+    setCenterSlide(currentSlider);
   };
+
+  useEffect(() => {
+    console.log('this is the new2 center slide log:' + centerSlide);
+  }, [centerSlide]);
 
 
   const breakpoints = {
@@ -38,17 +76,17 @@ export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange 
   return (
     <div className="w-[98vw] h-[79%] bg-gray-950 rounded-3xl mx-auto mt-[2%]">
       <div className='flex gap-2 text-white justify-center mx-2'>
-        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[35%] flex items-center justify-center'>Nuevas subidas</div>
-        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[20%] flex items-center justify-center'>Clásicos</div>
-        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[23%] flex items-center justify-center'>Psicológicas</div>
-        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center'>Sobrenatural</div>
-        <div className='bg-gray-900 rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center'>Slasher</div>
+        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('nueva')}>Nuevas</div>
+        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('clasica')}>Clásicos</div>
+        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('psicologica')}>Psicológicas</div>
+        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('paranormal')}>Paranormal</div>
+        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('slasher')}>Slasher</div>
       </div>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         // slidesPerView={5}
-        initialSlide={currentRealIndex}
+        initialSlide={centerSlide}
         breakpoints={breakpoints}
         coverflowEffect={{
           rotate: 30,
@@ -70,17 +108,13 @@ export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange 
         onSlideChange={handleSlideChange}
         onSwiper={setSwiperInstance}
       >
-        {movies.map((movie, index) => (
+        {currentArray.map((movie, index) => (
           <SwiperSlide key={index}>
-            <div
-              onClick={() => onMovieSelect(movie.url, index)}
-              className="cursor-pointer -mt-20"
-            >
-              <div className="h-64 w-44 overflow-hidden mx-auto">
-                <img src={movie.src} className="w-full h-full object-cover" alt={movie.title} />
-              </div>
-              
+
+            <div className="h-64 w-44 overflow-hidden mx-auto -mt-20 cursor-pointer" onClick={() => onMovieSelect(movie.url, index)} >
+              <img src={movie.src} className="w-full h-full object-cover" alt={movie.title} />
             </div>
+              
           </SwiperSlide>
         ))}
       </Swiper>

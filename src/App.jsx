@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import MoviesCont from './assets/components/MoviesCont';
 import Header from './assets/components/Header';
+import { movies } from './api/moviesData';
 
 function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
