@@ -5,7 +5,7 @@ import Header from './assets/components/Header';
 
 function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(5);
   const [currentMovie, setCurrentMovie] = useState(null); // State for current movie data
 
   const handleMovieSelect = (movieUrl, movieUrlIndex) => {

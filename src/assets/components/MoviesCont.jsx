@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Keyboard, EffectCoverflow } from 'swiper/modules';
 import { movies } from '../../api/moviesData';
@@ -7,14 +7,21 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-export default function MoviesCont({ onMovieSelect, initialSlide }) {
-  const [centerMovie, setCenterMovie] = useState(movies[0]);
+export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange }) {
+  const [activeIndex, setActiveIndex] = useState(movies[0]);
   const [swiperInstance, setSwiperInstance] = useState(null);
 
-  const handleSlideChange = (swiper) => {
-    const activeIndex = swiper.activeIndex % movies.length; // Adjust for looped slides
-    setCenterMovie(movies[activeIndex]);
+  let currentRealIndex = 0;
+
+  const handleSlideChange = (e) => {
+    const movingIndex = (e.realIndex);
+    console.log(`This is the first slider on the Swiper: ${movingIndex}`)
+    const currentSlider = (movingIndex + Math.floor(5 / 2)) % movies.length;
+    console.log(`This is the center index: ${currentSlider}`);
+    currentRealIndex = currentSlider;
+    setActiveIndex(movies[currentSlider]);
   };
+
 
   const breakpoints = {
     200: {
@@ -41,6 +48,7 @@ export default function MoviesCont({ onMovieSelect, initialSlide }) {
         effect={'coverflow'}
         grabCursor={true}
         // slidesPerView={5}
+        initialSlide={currentRealIndex}
         breakpoints={breakpoints}
         coverflowEffect={{
           rotate: 30,
@@ -66,23 +74,23 @@ export default function MoviesCont({ onMovieSelect, initialSlide }) {
           <SwiperSlide key={index}>
             <div
               onClick={() => onMovieSelect(movie.url, index)}
-              className="cursor-pointer"
+              className="cursor-pointer -mt-20"
             >
               <div className="h-64 w-44 overflow-hidden mx-auto">
                 <img src={movie.src} className="w-full h-full object-cover" alt={movie.title} />
               </div>
-              <h2 className="text-white text-center mt-2">{movie.title}</h2>
+              
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
       <div className='flex flex-col text-white'>
-        <h2 className='mb-2 mx-auto'>Aquí iría el titulo de la peli</h2>
-        <p className='w-[90%] mx-auto text-center'>Aqui la sinopsis de la película Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <h2 className="text-white text-center -mt-20 mb-4 text-xl">{activeIndex.title}</h2>
+        <p className='w-[80%] mx-auto text-center font-sans text-base mb-4 h-[6rem]'>{activeIndex.sinopsis}</p>
         <div className='flex gap-4 text-xs mt-2 mx-auto'>
-          <p>Aqui el director</p>
-          <p>Aqui el año</p>
-          <p>Tiempo de duracion</p>
+          <p>{activeIndex.director}</p>
+          <p>{activeIndex.año}</p>
+          <p>{activeIndex.duracion}</p>
         </div>
         <div></div>
 
