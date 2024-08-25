@@ -1,4 +1,6 @@
 export const movies = [
+  { src: "https://m.media-amazon.com/images/S/pv-target-images/a2533ab4954013ec9e08d1fa23d58e25c3aae0863dcd61a95fb94c742bfd9248.jpg",
+    title: "Tarot de la muerte", url: "https://mega.nz/embed/4f0wEb5Q#TNqTuyWZl5v16SRp2kY1LhzaOYc8QxtyOyWD-cUMbGg", sinopsis: 'Un grupo de amigos de la universidad empiezan a morir de formas relacionadas con su fortuna después de que les lean el horóscopo.', año: 2024, director: 'Spenser Cohen y Anna Halberg', duracion: 92+` min`, categorias: ['paranormal'] },
   { src: "https://m.media-amazon.com/images/M/MV5BM2M1MzI1MWYtYmM2ZC00OWY3LTk0ZGMtNmRkNzU1NzEzMWE5XkEyXkFqcGdeQXVyODUwOTkwODk@._V1_FMjpg_UX1000_.jpg",
     title: "Saw", url: "https://drive.google.com/file/d/1zOoxfRT5FYzXfvlSdFyWqu2B4Y3xkCs5/preview", sinopsis: 'Dos extraños, que se despiertan en una habitación sin recordar cómo llegaron allí, pronto descubren que son peones en un juego mortal perpetrado por un famoso asesino en serie.', año: 2004, director: 'James Wan', duracion: 103+` min`, categorias: ['sangrienta'] },
   { src: "https://m.media-amazon.com/images/M/MV5BMjY4Mjg4YTgtZWU2MC00MzVlLTg3MDgtYzUyYzU1NGMyMmU5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
