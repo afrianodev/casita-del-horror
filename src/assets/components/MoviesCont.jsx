@@ -65,7 +65,7 @@ export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange 
     200: {
       slidesPerView: 1,
     },
-    500: {
+    850: {
       slidesPerView: 3,
     },
     1024: {
