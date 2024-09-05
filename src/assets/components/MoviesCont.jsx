@@ -74,13 +74,88 @@ export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange 
   };
 
   return (
-    <div className="w-[98vw] h-[79%] bg-gray-950 rounded-3xl mx-auto mt-[2%]">
-      <div className='flex gap-2 text-white justify-center mx-2'>
-        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('nueva')}>Nuevas</div>
-        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('clasica')}>Clásicos</div>
-        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('psicologica')}>Psicológicas</div>
-        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('paranormal')}>Paranormal</div>
-        <div className='bg-gray-900 hover:bg-gray-800 active:bg-gray-600 active:text-black rounded-3xl p-2 mt-4 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('slasher')}>Slasher</div>
+    <div className="mx-auto w-[100vw] mt-[2%]">
+      {/* <div className='flex gap-2 text-white justify-center mx-2'>
+        <div className='border-2 hover:bg-gray-900 active:bg-gray-800 active:text-black rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('psicologica')}>Psicológicas</div>
+        <div className='border-2 hover:bg-gray-900 active:bg-gray-800 active:text-black rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('paranormal')}>Paranormal</div>
+        <div className='border-2 hover:bg-mid-gray active:bg-dark-gray rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('nueva')}>Sangrientas</div>
+        <div className='border-2 hover:bg-gray-900 active:bg-gray-800 active:text-black rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('clasica')}>Clásicas</div>
+        <div className='border-2 hover:bg-gray-900 active:bg-gray-800 active:text-black rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('slasher')}></div>
+      </div> */}
+      <div className='w-[100vw]'>
+        <h2 className='text-white text-4xl ml-4'>Recomendaciones random</h2>
+      </div>
+      <div className='flex'>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[0].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[0].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[0].año}</p>
+        </div>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[7].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[7].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[7].año}</p>
+        </div>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[28].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[28].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[28].año}</p>
+        </div>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[72].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[72].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[72].año}</p>
+        </div>
+      </div>
+      <div className='w-[100vw] mt-8'>
+        <h2 className='text-white text-4xl ml-4'>Recomendaciones Pipe</h2>
+      </div>
+      <div className='flex'>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[81].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[81].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[81].año}</p>
+        </div>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[84].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[84].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[84].año}</p>
+        </div>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[12].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[12].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[12].año}</p>
+        </div>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[33].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[33].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[33].año}</p>
+        </div>
+      </div>
+      <div className='w-[100vw] mt-8'>
+        <h2 className='text-white text-4xl ml-4'>Recomendaciones Eliza</h2>
+      </div>
+      <div className='flex'>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[19].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[19].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[19].año}</p>
+        </div>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[79].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[79].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[79].año}</p>
+        </div>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[82].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[82].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[82].año}</p>
+        </div>
+        <div className='mt-6 mx-auto w-[200px] h-[300px] flex flex-col mb-10'>
+          <img className='shadow-lg w-[200px] h-auto' src={movies[3].src} alt="" />
+          <h2 className='text-white text-2xl text-start'>{movies[3].title}</h2>
+          <p className='text-white text-xs mt-1'>{movies[3].año}</p>
+        </div>
       </div>
       <Swiper
         effect={'coverflow'}
@@ -104,7 +179,7 @@ export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange 
         }}
         navigation={true}
         modules={[Navigation, Keyboard, EffectCoverflow]}
-        className="mySwiper"
+        className="mySwiper mt-6"
         onSlideChange={handleSlideChange}
         onSwiper={setSwiperInstance}
       >

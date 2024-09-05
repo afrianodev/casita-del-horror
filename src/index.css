@@ -9,9 +9,13 @@
 }
 
 body {
-  font-family: "Shantell Sans", cursive;
+  font-family: "Oswald", sans-serif;
   height: 100%;
   overflow-y: hidden;
+}
+
+.bg-pruebita {
+  background-color: #242429;
 }
 
 

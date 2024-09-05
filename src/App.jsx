@@ -3,6 +3,7 @@ import './App.css';
 import MoviesCont from './assets/components/MoviesCont';
 import Header from './assets/components/Header';
 import MoviePlayer from './assets/components/MoviePlayer';
+import Previews from './assets/components/Previews';
 
 function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
@@ -19,8 +20,9 @@ function App() {
   };
 
   return (
-    <div className='bg-gray-900 h-[100vh] w-[100vw] overflow-x-hidden'>
+    <div className='bg-black h-[100vh] w-[100vw] overflow-x-hidden'>
       <Header />
+      <Previews />
       {selectedMovie ? (
         <MoviePlayer
         movieSel={selectedMovie}
