@@ -96,6 +96,10 @@ export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange 
       secTitle={'Recomendaciones Eliza'}
       moviesArray={eliArray}
       />
+      <Recomendations
+      secTitle={'Todas las películas'}
+      moviesArray={randomMovies}
+      />
       {/* <Recomendations
       secTitle={'Recomendaciones Pipe'}
       />

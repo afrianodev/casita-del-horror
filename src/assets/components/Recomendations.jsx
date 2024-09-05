@@ -26,7 +26,7 @@ export default function Recomendations({secTitle, moviesArray}) {
         <SwiperSlide>
         <div className='mt-8 mx-auto w-[200px] h-[300px] flex flex-col mb-10' key={index}>
             <img className='shadow-lg w-[200px] h-[250px]' src={movie.src} alt="" />
-            <h2 className='text-white text-2xl text-start'>{movie.title}</h2>
+            <h2 className='text-white text-2xl text-start max-[80%]:'>{movie.title}</h2>
             <p className='text-white text-xs mt-1 text-start'>{movie.año}</p>
         </div>
         </SwiperSlide>

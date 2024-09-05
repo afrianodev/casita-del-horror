@@ -4,6 +4,10 @@ import MoviesCont from './assets/components/MoviesCont';
 import Header from './assets/components/Header';
 import MoviePlayer from './assets/components/MoviePlayer';
 import Previews from './assets/components/Previews';
+import Footer from './assets/components/Footer';
+import Categories from './assets/components/Categories';
+import Recomendations from './assets/components/Recomendations';
+import { movies } from './api/moviesData';
 
 function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
@@ -35,6 +39,13 @@ function App() {
           initialSlide={currentSlideIndex}
         />
       )}
+      <Categories categorie={'Criaturas'}>
+        <Recomendations
+        secTitle={'Prueba'}
+        moviesArray={movies}
+         />
+      </Categories> 
+      <Footer />
     </div>
   );
 }
