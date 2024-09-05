@@ -6,7 +6,12 @@ El unico fin de esta web es educativo y hacer practicas de react en los diferent
 <a href='https://casita-horror.vercel.app/' target='blank'>Ver el sitio web</a>
 <br />
 
-<img src='https://drive.google.com/uc?export=view&id=1MmHBngx5_FREBJRhNCDk3rpeT23AtqRw' />
+Asi habia empezado la idea <br />
+<img src='https://drive.google.com/uc?export=view&id=1MmHBngx5_FREBJRhNCDk3rpeT23AtqRw' width='700' />
+
+Asi va actualmente <br />
+![GIF from Giphy](https://media.giphy.com/media/b9LsD32bQc4NSITk9X/giphy.gif)
+
 
 <h2>Tech Stack:</h2>
 ReactJS - Vite<br>
