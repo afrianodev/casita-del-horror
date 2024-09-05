@@ -1,4 +1,8 @@
 export const movies = [
+  { src: "https://pics.filmaffinity.com/La_mujer_dormida-957352406-large.jpg",
+    title: "La mujer dormida", url: "https://drive.google.com/file/d/1IwUceVepwjIuq2VFlf_l8E5Xx2bd_J1S/preview", sinopsis: 'Ana, una auxiliar de enfermería, comienza a sentirse atraída por Agustín, el marido de una mujer en coma a la que cuida. Entonces comienza a ser acosada por extraños fenómenos que quieren echarla de casa y separarla de Agustín.', año: 2024, director: 'Laura Alvea', duracion: 110+` min`, categorias: ['paranormal'] },
+  { src: "https://static.wixstatic.com/media/a4b7a2_2c30f5e7e7cb45819d9638a7e053800e~mv2.jpg/v1/fill/w_640,h_950,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a4b7a2_2c30f5e7e7cb45819d9638a7e053800e~mv2.jpg",
+    title: "La trampa", url: "https://mega.nz/embed/GIpGwIwD#wrgnt7R3Xw2rAv1mxhJwuqP9IYnoiZeFer4DQdRWlVE", sinopsis: 'Un padre y su hija adolescente asisten a un concierto de música pop, una vez empieza el concierto se dan cuenta de que están en el centro de un oscuro y siniestro suceso.', año: 2024, director: 'M. Night Shyamalan', duracion: 105+` min`, categorias: ['paranormal'] },
   { src: "https://image.tmdb.org/t/p/original/wSIu0DfjORY5g0ixNuJIVKUKFDP.jpg",
     title: "El aro", url: "https://mega.nz/embed/bQ9BDTzR#zOe0LEppX-ksv-STEMzoxSDyxN8NV72u2wYwbSlXd4E", sinopsis: 'Una periodista investiga una misteriosa cinta de video que parece causar la muerte de todo quien la ve tras una semana.', año: 2002, director: 'Gore Verbinski', duracion: 115+` min`, categorias: ['paranormal'] },
   { src: "https://es.web.img3.acsta.net/medias/nmedia/18/82/04/81/19592828.jpg",
@@ -8,15 +12,15 @@ export const movies = [
   { src: "https://m.media-amazon.com/images/S/pv-target-images/fc69ef06e8883113df6bc551abcdbc93ae7e3881f7b01c4865cdff368fb5a546.jpg",
     title: "Terror en Silent Hill 2", url: "https://mega.nz/embed/uFsnjBbY#Cfb-3wZxKyAeobrvDv8zFQoDLTJx57O02mBg-9kZimk", sinopsis: 'Tras la desaparición de su padrastro, Sharon se encuentra en una aterradora realidad alterna que acoge las respuestas a las pesadillas que la han acechado desde niña.', año: 2012, director: 'M.J. Bassett', duracion: 95+` min`, categorias: ['paranormal'] },
   { src: "https://m.media-amazon.com/images/S/pv-target-images/eab049d46cddf60e972250dca995be6613fd1b26b15c47a353e41490ced4f138.jpg",
-    title: "La cara oculta", url: "https://mega.nz/embed/DdFjkRqI#zUoStMtmZwMXpbaDazTtumMNvL5syJm-6ruQ1f6yQ_o", sinopsis: 'Adrián, un músico de la Orquesta Filarmónica de Bogotá, y su novia Belén parecen estar muy enamorados. Pero cuando Belén empieza a dudar de su fidelidad, desaparece sin dejar rastro.', año: 2011, director: 'Andrés Baiz', duracion: 97+` min`, categorias: ['paranormal'] },
+    title: "La cara oculta", url: "https://mega.nz/embed/DdFjkRqI#zUoStMtmZwMXpbaDazTtumMNvL5syJm-6ruQ1f6yQ_o", sinopsis: 'Adrián, un músico de la Orquesta Filarmónica de Bogotá, y su novia Belén parecen estar muy enamorados. Pero cuando Belén empieza a dudar de su fidelidad, desaparece sin dejar rastro.', año: 2011, director: 'Andrés Baiz', duracion: 97+` min`, categorias: ['paranormal', 'pipe'] },
   { src: "https://media.vogue.mx/photos/5d4055438b125d00080fa152/2:3/w_2560%2Cc_limit/se-lo-que-hicieron-el-verano-pasado.jpg",
-    title: "Se lo que hicieron el verano pasado", url: "https://mega.nz/embed/GNkWhKoS#Q1uduuaPjXDL6ncTuiCmELMuEgvQdGhMlM-O7X4gwtk", sinopsis: 'Cuatro amigos unidos por un trágico accidente se reúnen y son acosados por un maníaco con un garfio en su pequeña localidad costera.', año: 1997, director: 'Jim Gillespie', duracion: 101+` min`, categorias: ['paranormal'] },
+    title: "Se lo que hicieron el verano pasado", url: "https://mega.nz/embed/GNkWhKoS#Q1uduuaPjXDL6ncTuiCmELMuEgvQdGhMlM-O7X4gwtk", sinopsis: 'Cuatro amigos unidos por un trágico accidente se reúnen y son acosados por un maníaco con un garfio en su pequeña localidad costera.', año: 1997, director: 'Jim Gillespie', duracion: 101+` min`, categorias: ['paranormal', 'eli'] },
   { src: "https://m.media-amazon.com/images/M/MV5BNDJkNmY2YzQtYjVmNC00ODI0LThhM2ItYzc1MjI4NzM5MzYyXkEyXkFqcGdeQXVyMjIwMTIyNTA@._V1_.jpg",
-    title: "The Harbinger", url: "https://mega.nz/embed/eUtUGbyQ#tMkB80z3HOpfJEU2pFZCCz4VkZTvk6bmypbGvn445Bg", sinopsis: 'Monique se aventura fuera de la cuarentena para visitar a un viejo amigo que tiene pesadillas. Se ve atraída por un paisaje de ensueño infernal donde debe enfrentar sus mayores miedos, o arriesgarse a no haber existido nunca.', año: 2022, director: 'Andy Mitton', duracion: 87+` min`, categorias: ['paranormal'] },
+    title: "The Harbinger", url: "https://mega.nz/embed/eUtUGbyQ#tMkB80z3HOpfJEU2pFZCCz4VkZTvk6bmypbGvn445Bg", sinopsis: 'Monique se aventura fuera de la cuarentena para visitar a un viejo amigo que tiene pesadillas. Se ve atraída por un paisaje de ensueño infernal donde debe enfrentar sus mayores miedos, o arriesgarse a no haber existido nunca.', año: 2022, director: 'Andy Mitton', duracion: 87+` min`, categorias: ['paranormal', 'eli'] },
   { src: "https://es.web.img2.acsta.net/pictures/16/09/27/14/15/310705.jpg",
-    title: "31", url: "https://mega.nz/embed/WNVzGR7S#8w8_i8YzHGRvwXmGck0eeo-pQrJdFsAjGzQ82VvE85M", sinopsis: 'Cinco trabajadores de carnaval son secuestrados la noche antes de Halloween y se ven obligados a jugar un retorcido juego de vida o muerte llamado 31.', año: 2016, director: 'Rob Zombie', duracion: 102+` min`, categorias: ['paranormal'] },
+    title: "31", url: "https://mega.nz/embed/WNVzGR7S#8w8_i8YzHGRvwXmGck0eeo-pQrJdFsAjGzQ82VvE85M", sinopsis: 'Cinco trabajadores de carnaval son secuestrados la noche antes de Halloween y se ven obligados a jugar un retorcido juego de vida o muerte llamado 31.', año: 2016, director: 'Rob Zombie', duracion: 102+` min`, categorias: ['paranormal', 'eli'] },
   { src: "https://m.media-amazon.com/images/I/51MCjw8Dz5L._AC_UF1000,1000_QL80_.jpg",
-    title: "Strange Behavior", url: "https://mega.nz/embed/qBUHWZTY#hYBDuOSNOj3vRTl3Hcxawo0nHc1ZFoqSDPpt-k3NtQc", sinopsis: 'Un científico hace experimentos en los que convierte a adolescentes en asesinos.', año: 1981, director: 'Michael Laughlin', duracion: 92+` min`, categorias: ['paranormal'] },
+    title: "Strange Behavior", url: "https://mega.nz/embed/qBUHWZTY#hYBDuOSNOj3vRTl3Hcxawo0nHc1ZFoqSDPpt-k3NtQc", sinopsis: 'Un científico hace experimentos en los que convierte a adolescentes en asesinos.', año: 1981, director: 'Michael Laughlin', duracion: 92+` min`, categorias: ['paranormal', 'eli'] },
   { src: "https://images.justwatch.com/poster/12344437/s718/goodnight-mommy.jpg",
     title: "Buenas noches mamá", url: "https://mega.nz/embed/yMNC2AJb#VeTgPdmUbhtet8VJ_-XWnvNaPptdLVSCCyjNGyumHF8", sinopsis: 'Los hermanos gemelos llegan a la casa de su madre y comienzan a sospechar que algo no anda bien.', año: 2022, director: 'Matt Sobel', duracion: 92+` min`, categorias: ['paranormal'] },
   { src: "https://m.media-amazon.com/images/M/MV5BYjVjYjhlNTQtN2UxOC00Njk5LWFjNDctODNjZTI1ZGM0ZDZkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
@@ -90,7 +94,7 @@ export const movies = [
   { src: "https://m.media-amazon.com/images/S/pv-target-images/8ca65cf355f3f2f20f429f59aa643d7573cc1e48872f007cbc78e3c628568883.jpg",
     title: "La canción de cuna de Katherine", url: "https://drive.google.com/file/d/1Ul6sKzqKMTu9pFy1o1D-yh8dqEcdrOCm/preview", sinopsis: 'Durante un paseo en el bosque, Lily se pierde de su novio y le pide ayuda a Evan, un misterioso hombre que sufre de trastornos mentales. Creyendo que Lily es su hija, el hombre le impide que se vaya.', año: 2020, director: 'Savvas Christou', duracion: 89+` min`, categorias: ['psicologica'] },
   { src: "https://es.web.img2.acsta.net/medias/nmedia/18/89/70/34/20062844.jpg",
-    title: "Hostal", url: "https://mega.nz/embed/RDEA2IyS#r0up5T0tcYSj3mdvowa9r5-8Vq3keDyCtJOr6gFo8DI", sinopsis: 'Tres mochileros se dirigen a una ciudad eslovaca que promete cumplir con sus fantasias, sin tener idea del infierno que les espera.', año: 2005, director: 'Eli Roth', duracion: 94+` min`, categorias: ['sangrienta'] },
+    title: "Hostal", url: "https://mega.nz/embed/RDEA2IyS#r0up5T0tcYSj3mdvowa9r5-8Vq3keDyCtJOr6gFo8DI", sinopsis: 'Tres mochileros se dirigen a una ciudad eslovaca que promete cumplir con sus fantasias, sin tener idea del infierno que les espera.', año: 2005, director: 'Eli Roth', duracion: 94+` min`, categorias: ['sangrienta', 'pipe'] },
   { src: "https://images.justwatch.com/poster/257418774/s718/hostel-2.jpg",
     title: "Hostal 2", url: "https://mega.nz/embed/NLtETYTR#A4HnMDMsxSyzRtmKcSz7OIz3TbSHl6npWsoLuedoqls", sinopsis: 'Tres universitarios americanos estudiando en el extranjero llegan a un hotel eslovaco que no es lo que parece.', año: 2007, director: 'Eli Roth', duracion: 94+` min`, categorias: ['sangrienta'] },
   { src: "https://m.media-amazon.com/images/M/MV5BMTkwNDU0NTE0OV5BMl5BanBnXkFtZTgwNzAzNzQyMTI@._V1_FMjpg_UX1000_.jpg",
@@ -124,9 +128,9 @@ export const movies = [
   { src: "https://es.web.img3.acsta.net/pictures/14/04/15/10/46/568345.jpg",
     title: "El resplandor", url: "https://mega.nz/embed/nY4BlT5T#ER-e8FttwCgayQ8TYk_0Qtpft15oFrxZ0skbc-KDrHM", sinopsis: 'Una familia se dirige a un hotel aislado para pasar el invierno. Allí, una presencia espiritual maligna violenta al padre, mientras el hijo, psíquico, tiene horripilantes visiones del pasado y del futuro.', año: 1980, director: 'Stanley Kubrick', duracion: 146+` min`, categorias: ['psicologica', 'clasica'] },
   { src: "https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_.jpg",
-    title: "Get out", url: "https://mega.nz/embed/eYwSEIRB#s_KYprWt7nDsAlCKz221IDIUBzogoRDx123BHmvxUOI", sinopsis: 'Un joven afroamericano visita a los padres de su novia blanca durante el fin de semana, donde su inicial inquietud frente a su recibimiento finalmente alcanza un punto de ebullición.', año: 2017, director: 'Jordan Peele', duracion: 104+` min`, categorias: ['psicologica'] },
+    title: "Get out", url: "https://mega.nz/embed/eYwSEIRB#s_KYprWt7nDsAlCKz221IDIUBzogoRDx123BHmvxUOI", sinopsis: 'Un joven afroamericano visita a los padres de su novia blanca durante el fin de semana, donde su inicial inquietud frente a su recibimiento finalmente alcanza un punto de ebullición.', año: 2017, director: 'Jordan Peele', duracion: 104+` min`, categorias: ['psicologica', 'pipe'] },
   { src: "https://m.media-amazon.com/images/S/pv-target-images/b002a597d69f578e27bd443072e580276549033ef4276a8a3d036e890cc00829.jpg",
-    title: "La huerfana", url: "https://mega.nz/embed/qI5hmDKQ#55Fuw5qV9qSjO1zY6T6U3pLBzchyEUKiXcM4fcajXPw", sinopsis: 'Un matrimonio que recientemente perdió a su bebé adopta a una niña de 9 años que no es tan inocente como parece.', año: 2009, director: 'Jaume Collet-Serra', duracion: 123+` min`, categorias: ['psicologica'] },
+    title: "La huerfana", url: "https://mega.nz/embed/qI5hmDKQ#55Fuw5qV9qSjO1zY6T6U3pLBzchyEUKiXcM4fcajXPw", sinopsis: 'Un matrimonio que recientemente perdió a su bebé adopta a una niña de 9 años que no es tan inocente como parece.', año: 2009, director: 'Jaume Collet-Serra', duracion: 123+` min`, categorias: ['psicologica', 'pipe'] },
   { src: "https://pics.filmaffinity.com/La_novena_puerta-414882831-large.jpg",
     title: "La última puerta", url: "https://mega.nz/embed/ncQHhIbZ#xmXOrrhKyELoyPQe_Ljjh-VJxf0uJBQayUADW4x7lkM", sinopsis: 'Un comerciante de libros raros, mientras busca los dos últimos ejemplares de un texto demoníaco, se ve envuelto en una conspiración con tintes sobrenaturales.', año: 1999, director: 'Roman Polanski', duracion: 133+` min`, categorias: ['psicologica'] },
   { src: "https://pics.filmaffinity.com/the_taking_of_deborah_logan-701594553-large.jpg",
@@ -150,13 +154,13 @@ export const movies = [
   { src: "https://pics.filmaffinity.com/Mamaa-432435114-large.jpg",
     title: "Mamá", url: "https://mega.nz/embed/DNwVlAQI#-dB2l9edqW25DJOEZk-LwNveWtpCt5w81pnM31JWAIQ", sinopsis: 'Después de que una joven pareja acoja a sus dos sobrinas, sospechan que un espíritu sobrenatural llamado Mamá se ha apoderado de su familia.', año: 2013, director: 'Andy Muschietti', duracion: 100+` min`, categorias: ['paranormal'] },
   { src: "https://m.media-amazon.com/images/S/pv-target-images/24e586df3f686980fe8d5df8d767f956bb4568e59e5fb507defe241a862c60a9.jpg",
-    title: "Nosotros", url: "https://mega.nz/embed/KVoGUB4T#e8hZz8-67M0Wsw2dV9r4dZdmCwaDAuIYaGlUWaITwcc", sinopsis: 'Una familia va a pasar unos dias a su casa de la playa, pero la tranquilidad se vuelve tensión cuando reciben a unos visitantes que no son bienvenidos.', año: 2019, director: 'Jordan Peele', duracion: 116+` min`, categorias: ['psicologica'] },
+    title: "Nosotros", url: "https://mega.nz/embed/KVoGUB4T#e8hZz8-67M0Wsw2dV9r4dZdmCwaDAuIYaGlUWaITwcc", sinopsis: 'Una familia va a pasar unos dias a su casa de la playa, pero la tranquilidad se vuelve tensión cuando reciben a unos visitantes que no son bienvenidos.', año: 2019, director: 'Jordan Peele', duracion: 116+` min`, categorias: ['psicologica', 'pipe'] },
   { src: "https://mx.web.img3.acsta.net/pictures/18/01/31/23/47/1911116.jpg",
     title: "Los huespedes", url: "https://mega.nz/embed/6cBiTC6C#qpwnB2gbX1HMl-hiwyOI0oaaZQlfJjVkb_wtac6yanA", sinopsis: 'Dos hermanos se preocupan cada vez más por el comportamiento inquietante de sus abuelos cuando los visitan de vacaciones.', año: 2015, director: 'M. Night Shyamalan', duracion: 94+` min`, categorias: ['psicologica'] },
   { src: "https://m.media-amazon.com/images/M/MV5BMzA2NDkwNjAwMl5BMl5BanBnXkFtZTgwNTA2OTYzNjM@._V1_.jpg",
     title: "La oscuridad", url: "https://mega.nz/embed/KYAFBSST#k7S3DGFgzuIecPaiEz6F3n53ZFR2Q1OqUDXOnaIHecE", sinopsis: 'Una adolescente no-muerta se hace amiga de un chico ciego al que conoce en el bosque en que habita. Ambos han sufrido abusos inimaginables, y encuentran consuelo el uno en el otro.', año: 2018, director: 'Justin P. Lange y Klemens Hufnagl', duracion: 95+` min`, categorias: ['sangrienta'] },
   { src: "https://m.media-amazon.com/images/S/pv-target-images/1ea406e69f757180103121dad074dd0f82d74b2d56be3f1be5f483801e11b894.jpg",
-    title: "La maldición de las hermanas", url: "https://mega.nz/embed/zNYVwQgZ#rXRd9yD_mLYN2LnXDEVZf6L_totOGyiuHRs-SkomdWE", sinopsis: 'Anna regresa a casa después de una temporada en un hospital psiquiátrico, pero su cruel madrastra y las visiones espantosas de su fallecida madre ponen en peligro su recuperación.', año: 2009, director: 'Charles Guard y Thomas Guard', duracion: 87+` min`, categorias: ['psicologica'] },
+    title: "La maldición de las hermanas", url: "https://mega.nz/embed/zNYVwQgZ#rXRd9yD_mLYN2LnXDEVZf6L_totOGyiuHRs-SkomdWE", sinopsis: 'Anna regresa a casa después de una temporada en un hospital psiquiátrico, pero su cruel madrastra y las visiones espantosas de su fallecida madre ponen en peligro su recuperación.', año: 2009, director: 'Charles Guard y Thomas Guard', duracion: 87+` min`, categorias: ['psicologica', 'pipe'] },
   { src: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9622770_p_v10_ab.jpg",
     title: "La purga", url: "https://mega.nz/embed/XIAn1YCB#8US9T9lwb1y5nblsTPYsrANmWVRIxyCnVW0UOI-zp7I", sinopsis: 'Una familia adinerada es retenida como rehén por albergar al objetivo de un sindicato asesino durante la Purga, un período de 12 horas en el que cualquier delito es legal.', año: 2013, director: 'James DeMonaco', duracion: 85+` min`, categorias: ['psicologica'] },
   { src: "https://es.web.img3.acsta.net/pictures/14/11/05/12/38/064438.jpg",
@@ -164,7 +168,7 @@ export const movies = [
   { src: "https://pics.filmaffinity.com/El_hechizo-530888058-large.jpg",
     title: "El hechizo", url: "https://drive.google.com/file/d/1sainsC4fpTJSFvw8v7c1EXp5jyMIiPqw/preview", sinopsis: 'Un hombre despierta en el ático de una hechicera y tiene que intentar liberarse y salvar a su familia de un siniestro ritual antes de que se alce la luna de sangre.', año: 2020, director: 'Mark Tonderai', duracion: 91+` min`, categorias: ['psicologica'] },
   { src: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a994af131619285.628833a89413c.jpg",
-    title: "Psicosis", url: "https://drive.google.com/file/d/1kJIcsk4bRIYCjm_l5qRV-MnvGoqnTjRG/preview", sinopsis: 'Una secretaria de Phoenix malversa cuarenta mil dólares de un cliente, se da a la fuga y se registra en un motel remoto administrado por un joven con una controladora madre.', año: 1960, director: 'Alfred Hitchcock', duracion: 109+` min`, categorias: ['psicologica', 'clasica'] },
+    title: "Psicosis", url: "https://drive.google.com/file/d/1kJIcsk4bRIYCjm_l5qRV-MnvGoqnTjRG/preview", sinopsis: 'Una secretaria de Phoenix malversa cuarenta mil dólares de un cliente, se da a la fuga y se registra en un motel remoto administrado por un joven con una controladora madre.', año: 1960, director: 'Alfred Hitchcock', duracion: 109+` min`, categorias: ['psicologica', 'clasica', 'pipe'] },
   { src: "https://m.media-amazon.com/images/M/MV5BMTAxYjEyMTctZTg3Ni00MGZmLWIxMmMtOGM2NTFiY2U3MmExXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
     title: "Nosferatu", url: "https://drive.google.com/file/d/1nstMdC49krnpQ78tGgB6Su8UWaN83Tqw/preview", sinopsis: 'El vampiro conde Orlok manifiesta su interés por una nueva residencia y por la esposa del agente inmobiliario Hutter.', año: 1922, director: 'F.W. Murnau', duracion: 94+` min`, categorias: ['clasica'] },
     { src: "https://pics.filmaffinity.com/Crudo-871308238-large.jpg",
@@ -178,7 +182,7 @@ export const movies = [
     { src: "https://m.media-amazon.com/images/S/pv-target-images/710ba172ff44a04e294b7054214dc0782c5bf2e2a1a2860a1bf8bfda7d61a79d.png",
       title: "Baba Yaga", url: "https://mega.nz/embed/kX0BFSRD#gZZM06VbPw7TlgXZPb1pnPPw_5yf7bl59VR_X1mQwFo", sinopsis: 'Una familia que se mudó a un nuevo departamento en las afueras de la ciudad, contrata a una niñera que rápidamente se gana su confianza.', año: 2020, director: 'Svyatoslav Podgaevskiy y Nathalia Hencker', duracion: 97+` min`, categorias: ['paranormal'] },
     { src: "https://www.ecartelera.com/carteles/8100/8152/001_m.jpg",
-      title: "Misery", url: "https://mega.nz/embed/dCciCSzQ#BQEJPRxkl7o88nYDPIA8UjHgudfKGfKkDSlh9QbGROQ", sinopsis: 'Tras ser rescatado de un accidente de coche por una fan de sus novelas, un famoso autor se da cuenta de que los cuidados que recibe son solo el principio de una pesadilla de cautiverio y abusos.', año: 1990, director: 'Rob Reiner', duracion: 107+` min`, categorias: ['psicologica'] },
+      title: "Misery", url: "https://mega.nz/embed/dCciCSzQ#BQEJPRxkl7o88nYDPIA8UjHgudfKGfKkDSlh9QbGROQ", sinopsis: 'Tras ser rescatado de un accidente de coche por una fan de sus novelas, un famoso autor se da cuenta de que los cuidados que recibe son solo el principio de una pesadilla de cautiverio y abusos.', año: 1990, director: 'Rob Reiner', duracion: 107+` min`, categorias: ['psicologica', 'pipe'] },
     { src: "https://es.web.img3.acsta.net/medias/nmedia/18/69/01/76/20271320.jpg",
       title: "Dejame entrar", url: "https://mega.nz/embed/hKVHCLLT#rL58JL0gj2blcthGxxm71Vx7_bxGl15aj4T7ZMG_l-Y", sinopsis: 'Oskar, un joven tímido de 12 años, aterrorizado por unos matones, se hace amigo de Eli, una misteriosa vecina, cuya llegada coincide con una serie de misteriosas muertes. A pesar de que el joven piensa que ella es un vampiro, intenta que su amistad esté por encima de su miedo.', año: 2008, director: 'Tomas Alfredson', duracion: 114+` min`, categorias: ['sangrienta', 'psicologica'] },
     { src: "https://i.ebayimg.com/images/g/54cAAOSwV0RXp4Ml/s-l1200.webp",
@@ -194,7 +198,7 @@ export const movies = [
     { src: "https://m.media-amazon.com/images/M/MV5BNzQyNGQxNjYtMWVmYS00ZTNhLWEyYTAtMjFiOWVjN2ZjYzdjXkEyXkFqcGc@._V1_.jpg",
       title: "Starve Acre", url: "https://drive.google.com/file/d/13sRMp3rJM9-uIReGGaJrYxu0tDpXa0Z3/preview", sinopsis: 'La idílica vida de una pareja de campesinos se ve alterada cuando su hijo empieza a comportarse de forma extraña.', año: 2023, director: 'Daniel Kokotajlo', duracion: 98+` min`, categorias: ['psicologica', 'paranormal'] },
     { src: "https://image.tmdb.org/t/p/original/uQBT59dMWt4FsElTWPIqbld93Ud.jpg",
-      title: "El despertar del diablo", url: "https://drive.google.com/file/d/1NchWdYu4LuHK54p5IOQakObsyk_kPKw5/preview", sinopsis: 'Una familia estadounidense de clase media es acosada por un grupo de personas psicóticas que viven en el desierto, lejos de la civilización.', año: 2006, director: 'Alexandre Aja', duracion: 107+` min`, categorias: ['psicologica', 'sangrienta'] },
+      title: "El despertar del diablo", url: "https://drive.google.com/file/d/1NchWdYu4LuHK54p5IOQakObsyk_kPKw5/preview", sinopsis: 'Una familia estadounidense de clase media es acosada por un grupo de personas psicóticas que viven en el desierto, lejos de la civilización.', año: 2006, director: 'Alexandre Aja', duracion: 107+` min`, categorias: ['psicologica', 'sangrienta', 'pipe'] },
     { src: "https://image.tmdb.org/t/p/original/4CMvyapWAVUNT5Y93Pg4Pq3Cqhp.jpg",
       title: "El despertar del diablo 2", url: "https://drive.google.com/file/d/13PDK5E0WiMneEt_zvKQNvqQyoxWs1494/preview", sinopsis: 'Un grupo de aprendices de la Guardia Nacional de los Estados Unidos termina enfrentándose a un grupo feroz de mutantes en su último día de entrenamiento en el desierto.', año: 2007, director: 'Martin Weisz', duracion: 89+` min`, categorias: ['psicologica', 'sangrienta'] },
     { src: "https://m.media-amazon.com/images/S/pv-target-images/fee847153475db1d7e0d524573de5a5fbb07c72328f43e70f122118b1363b844.jpg",
@@ -214,7 +218,7 @@ export const movies = [
     { src: "https://pics.filmaffinity.com/the_poughkeepsie_tapes-852900426-large.jpg",
       title: "las cintas de poughkeepsie", url: "https://mega.nz/embed/xC111QrJ#_05OhQuuaEDYyd5WYGVz4q14wsfENwqAyuZerq-Lx7c", sinopsis: 'Cuando se encuentran cientos de horas de cintas de video en una casa abandonada en el norte del estado de Nueva York, un grupo de trabajo de varias agencias descubre la colección de evidencia más inquietante que los detectives de homicidios hayan visto jamás.', año: 2007, director: 'John Erick Dowdle', duracion: 86+` min`, categorias: ['psicologica', 'sangrienta'] },
     { src: "https://m.media-amazon.com/images/S/pv-target-images/d1893dd7510bfba7585259259a4005cac499e935c1e6791684b1887a0d07fc1d.jpg",
-      title: "La venganza de la casa del lago", url: "https://mega.nz/embed/dG91zLZA#tA0GQ9rejdZwCBxnrHjMPqGjy3nmXXF57a8-THLmz5s", sinopsis: 'Tras secuestrar y asaltar brutalmente a dos jóvenes, una banda se refugia sin saberlo en la casa de vacaciones de los padres de una de las chicas. Cuando estos descubren lo que ha pasado, planean su venganza.', año: 2009, director: 'Dennis Iliadis', duracion: 113+` min`, categorias: ['psicologica', 'sangrienta'] },
+      title: "La venganza de la casa del lago", url: "https://mega.nz/embed/dG91zLZA#tA0GQ9rejdZwCBxnrHjMPqGjy3nmXXF57a8-THLmz5s", sinopsis: 'Tras secuestrar y asaltar brutalmente a dos jóvenes, una banda se refugia sin saberlo en la casa de vacaciones de los padres de una de las chicas. Cuando estos descubren lo que ha pasado, planean su venganza.', año: 2009, director: 'Dennis Iliadis', duracion: 113+` min`, categorias: ['psicologica', 'sangrienta', 'pipe'] },
     { src: "https://pics.filmaffinity.com/funny_games_u_s-831316674-large.jpg",
       title: "Juegos Sádicos", url: "https://mega.nz/embed/Eb8k2JAA#JMLpq8TGtBfOsZKiSAN3_q__vnQ8YQG27nY407_UF5k", sinopsis: 'Dos jóvenes psicópatas toman como rehenes a una familia en su cabaña.', año: 2007, director: 'Michael Haneke', duracion: 111+` min`, categorias: ['psicologica', 'sangrienta'] },
     { src: "https://m.media-amazon.com/images/S/pv-target-images/9dad153232e2599f3f86a07e9b6e463a4c0a6726758bf14c21eb1da97b5ddf63.jpg",
@@ -248,3 +252,19 @@ export const movies = [
   ];
 
   console.log(movies.length);
+
+  function shuffleArray(array) {
+    // Create a copy of the array to avoid mutating the original array
+    const shuffledArray = [...array];
+  
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      // Generate a random index
+      const j = Math.floor(Math.random() * (i + 1));
+      // Swap elements at index i and j
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+  
+    return shuffledArray;
+  }
+
+  export let randomMovies = shuffleArray(movies);

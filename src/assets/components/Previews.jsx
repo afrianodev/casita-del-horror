@@ -11,8 +11,11 @@ export default function Previews() {
         ></iframe>
   
         {/* Overlay Content */}
-        <div className="relative z-10 flex justify-center items-center w-full h-[600px] md:h-[250px]">
-          <h1 className="text-white text-4xl">Welcome to My Website</h1>
+        <div className="relative z-10 flex flex-col justify-center items-center w-full h-[600px] md:h-[250px]">
+          <h1 className="text-white text-4xl">Aquí iria titulo de pelicula recomendada</h1>
+          <p>Aqui algun texto de la sinopsis y demas info</p>
+          <p>Aqui espacio para las fotos</p>
+          <p>Aqui los botones</p>
         </div>
     </div>)
 }
