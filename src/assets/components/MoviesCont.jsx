@@ -1,112 +1,83 @@
-import { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Keyboard, EffectCoverflow } from 'swiper/modules';
-import { movies, randomMovies } from '../../api/moviesData';
+import { randomMovies, pipeArray, eliArray, random10Movies } from '../../api/moviesData';
 import Recomendations from './Recomendations';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-let nuevoArray = movies
+export default function MoviesCont({ onMovieSelect, onMovieTitle }) {
+  // const [activeIndex, setActiveIndex] = useState(movies[0]);
+  // const [centerSlide, setCenterSlide] = useState(0);
+  // const [currentArray, setCurrentArray] = useState(movies);
 
-export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange }) {
-  const [activeIndex, setActiveIndex] = useState(movies[0]);
-  const [swiperInstance, setSwiperInstance] = useState(null);
-  const [centerSlide, setCenterSlide] = useState(0);
-  const [currentArray, setCurrentArray] = useState(movies);
+  // const handleCategorySelect = (category) => {
+  //   switch (category) {
+  //     case 'nueva':
+  //       setCurrentArray(nuevoArray);
+  //       break;
+  //     case 'slasher':
+  //       setCurrentArray(slasherArray);
+  //       break;
+  //     case 'clasica':
+  //       setCurrentArray(clasicaArray);
+  //       break;
+  //     case 'psicologica':
+  //       setCurrentArray(psicologicaArray);
+  //       break;
+  //     case 'sangrienta':
+  //       setCurrentArray(sangrientaArray);
+  //       break;
+  //     case 'paranormal':
+  //       setCurrentArray(paranormalArray);
+  //       break;
+  //     default:
+  //       setCurrentArray(nuevoArray);
+  //   }
+  // };
 
-  let pipeArray = movies.filter(movie => movie.categorias.includes('pipe'));
-  let eliArray = movies.filter(movie => movie.categorias.includes('eli'));
-  let random10Movies = randomMovies.slice(0, 10);
-  let psicologicaArray = movies.filter(movie => movie.categorias.includes('psicologica'));
-  let sangrientaArray = movies.filter(movie => movie.categorias.includes('sangrienta'));
-  let paranormalArray = movies.filter(movie => movie.categorias.includes('paranormal'));
-  let currentMovies = movies;
+  // const handleSlideChange = (e) => {
+  //   const movingIndex = (e.realIndex);
+  //   console.log(`This is the first slider on the Swiper: ${movingIndex}`)
+  //   const currentSlider = (movingIndex + Math.floor(5 / 2)) % movies.length;
+  //   console.log(`This is the center index: ${currentSlider}`);
+  //   setActiveIndex(movies[currentSlider]);
+  //   setCenterSlide(currentSlider);
+  // };
 
-  const handleCategorySelect = (category) => {
-    switch (category) {
-      case 'nueva':
-        setCurrentArray(nuevoArray);
-        break;
-      case 'slasher':
-        setCurrentArray(slasherArray);
-        break;
-      case 'clasica':
-        setCurrentArray(clasicaArray);
-        break;
-      case 'psicologica':
-        setCurrentArray(psicologicaArray);
-        break;
-      case 'sangrienta':
-        setCurrentArray(sangrientaArray);
-        break;
-      case 'paranormal':
-        setCurrentArray(paranormalArray);
-        break;
-      default:
-        setCurrentArray(nuevoArray);
-    }
-  };
+  // useEffect(() => {
+  //   console.log('this is the new2 center slide log:' + centerSlide);
+  // }, [centerSlide]);
 
-  const handleSlideChange = (e) => {
-    const movingIndex = (e.realIndex);
-    console.log(`This is the first slider on the Swiper: ${movingIndex}`)
-    const currentSlider = (movingIndex + Math.floor(5 / 2)) % movies.length;
-    console.log(`This is the center index: ${currentSlider}`);
-    setActiveIndex(movies[currentSlider]);
-    setCenterSlide(currentSlider);
-  };
-
-  useEffect(() => {
-    console.log('this is the new2 center slide log:' + centerSlide);
-  }, [centerSlide]);
-
-
-  const breakpoints = {
-    200: {
-      slidesPerView: 1,
-    },
-    850: {
-      slidesPerView: 3,
-    },
-    1024: {
-      slidesPerView: 5,
-    },
-  };
+  const handleMovieClick = (movie) => {
+    onMovieSelect(movie.url)
+    onMovieTitle(movie.title)
+  }
 
   return (
     <div className="mx-auto w-[100vw] mt-[2%]">
-      {/* <div className='flex gap-2 text-white justify-center mx-2'>
-        <div className='border-2 hover:bg-gray-900 active:bg-gray-800 active:text-black rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('psicologica')}>Psicológicas</div>
-        <div className='border-2 hover:bg-gray-900 active:bg-gray-800 active:text-black rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('paranormal')}>Paranormal</div>
-        <div className='border-2 hover:bg-mid-gray active:bg-dark-gray rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('nueva')}>Sangrientas</div>
-        <div className='border-2 hover:bg-gray-900 active:bg-gray-800 active:text-black rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('clasica')}>Clásicas</div>
-        <div className='border-2 hover:bg-gray-900 active:bg-gray-800 active:text-black rounded-xl p-2 w-[15%] flex items-center justify-center cursor-pointer select-none' onClick={() => handleCategorySelect('slasher')}></div>
-      </div> */}
+
       <Recomendations
       secTitle={'Recomendaciones random'}
       moviesArray={random10Movies}
+      onChange={handleMovieClick}
       />
       <Recomendations
       secTitle={'Recomendaciones Pipe'}
       moviesArray={pipeArray}
+      onChange={handleMovieClick}
       />
       <Recomendations
       secTitle={'Recomendaciones Eliza'}
       moviesArray={eliArray}
+      onChange={handleMovieClick}
       />
       <Recomendations
       secTitle={'Todas las películas'}
       moviesArray={randomMovies}
+      onChange={handleMovieClick}
       />
-      {/* <Recomendations
-      secTitle={'Recomendaciones Pipe'}
-      />
-      <Recomendations
-      secTitle={'Recomendaciones Eliza'}
-      /> */}
-      <Swiper
+
+      {/* <Swiper
         effect={'coverflow'}
         grabCursor={true}
         // slidesPerView={5}
@@ -152,7 +123,7 @@ export default function MoviesCont({ onMovieSelect, initialSlide, onMovieChange 
         </div>
         <div></div>
 
-      </div>
+      </div> */}
     </div>
   );
 }

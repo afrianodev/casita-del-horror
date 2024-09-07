@@ -11,41 +11,53 @@ import { movies } from './api/moviesData';
 
 function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(5);
-  const [currentMovie, setCurrentMovie] = useState(null); // State for current movie data
+  const [movieTitle, setMovieTitle] = useState('');
+  // const [currentSlideIndex, setCurrentSlideIndex] = useState(5);
+  // const [currentMovie, setCurrentMovie] = useState(null); // State for current movie data
 
-  const handleMovieSelect = (movieUrl, movieUrlIndex) => {
+  const handleMovieSelect = (movieUrl) => {
     setSelectedMovie(movieUrl);
-    setCurrentSlideIndex(movieUrlIndex);
+    // setCurrentSlideIndex(movieUrlIndex);
   };
 
-  const handleMovieChange = (movie) => {
-    setCurrentMovie(movie); // Update current movie data
-  };
+  const handleMovieTitle = (movieTitle) => {
+    setMovieTitle(movieTitle);
+  }
+
+  // const handleMovieChange = (movie) => {
+  //   setCurrentMovie(movie); // Update current movie data
+  // };
 
   return (
-    <div className='bg-black h-[100vh] w-[100vw] overflow-x-hidden'>
-      <Header />
-      <Previews />
+    <div className='bg-black h-[100vh] w-full overflow-x-hidden'>
       {selectedMovie ? (
         <MoviePlayer
         movieSel={selectedMovie}
+        movieTitle={movieTitle}
         setSelectedMovie={setSelectedMovie}
-        setCurrentMovie={setCurrentMovie} />
+ />
       ) : (
+        <>
+        <Header />
+        <Previews />
         <MoviesCont
+          // onMovieSelect={handleMovieSelect}
+          // onMovieChange={handleMovieChange} // Pass the new callback prop
+          // initialSlide={currentSlideIndex}
+          // onChange={handleMovieSelect}
           onMovieSelect={handleMovieSelect}
-          onMovieChange={handleMovieChange} // Pass the new callback prop
-          initialSlide={currentSlideIndex}
+          onMovieTitle={handleMovieTitle}
         />
+        <Footer />
+        </>
       )}
-      <Categories categorie={'Criaturas'}>
+      {/* <Categories categorie={'Criaturas'}>
         <Recomendations
         secTitle={'Prueba'}
         moviesArray={movies}
          />
-      </Categories> 
-      <Footer />
+      </Categories>  */}
+      
     </div>
   );
 }

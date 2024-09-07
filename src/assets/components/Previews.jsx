@@ -4,7 +4,7 @@ export default function Previews() {
     return(
     <div className="relative h-[450px] md:h-[360px] lg:h-[400px] w-[100%] md:w-[100%] overflow-hidden mt-2">
         <iframe
-          className="absolute -top-36 md:-top-40 -left-60 md:left-0 w-[300%] md:w-full h-[800px]"
+          className="absolute -top-36 md:-top-40 -left-60 md:left-0 lg:-left-[130px] w-[300%] md:w-full lg:w-[120%] h-[800px]"
           src="https://www.youtube.com/embed/oO0DvpIWhd0?autoplay=1&mute=1&controls=0&loop=1&playlist=oO0DvpIWhd0"
           title="YouTube video"
           frameBorder="0"
