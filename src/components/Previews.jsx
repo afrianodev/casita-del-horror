@@ -1,4 +1,4 @@
-import { movies } from "../../api/moviesData"
+import { movies } from "../api/moviesData"
 
 export default function Previews() {
     return(
@@ -25,7 +25,10 @@ export default function Previews() {
               <p>{movies[0].director}</p>
               <p>{movies[0].duracion}</p>
             </div>
-            <div className="text-white bg-black w-[150px] text-center py-2 rounded-md cursor-pointer select-none">Ver Trailer</div>
+            <div className="flex gap-2">
+              <div className="text-white bg-red-900 w-[120px] text-center py-2 rounded-md cursor-pointer select-none">Ver Trailer</div>
+              <div className="text-white bg-black w-[120px] text-center py-2 rounded-md cursor-pointer select-none">Ver Película</div>
+            </div>
           </div>
         </div>
     </div>)

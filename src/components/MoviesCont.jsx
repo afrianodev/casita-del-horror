@@ -1,4 +1,4 @@
-import { randomMovies, pipeArray, eliArray, random10Movies } from '../../api/moviesData';
+import { randomMovies, pipeArray, eliArray, random10Movies } from '../api/moviesData';
 import Recomendations from './Recomendations';
 
 import 'swiper/css';

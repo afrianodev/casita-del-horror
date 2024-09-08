@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Keyboard, EffectCoverflow } from 'swiper/modules';
 
-export default function Recomendations({secTitle, moviesArray, onChange}) {
+export default function Recomendations({secTitle, moviesArray, onMovieSelect, onMovieTitle}) {
   const breakpoints = {
     200: {
       slidesPerView: 1,
@@ -13,6 +13,11 @@ export default function Recomendations({secTitle, moviesArray, onChange}) {
       slidesPerView: 5,
     },
   };
+
+  const handleMovieClick = (movie) => {
+    onMovieSelect(movie.url)
+    onMovieTitle(movie.title)
+  }
 
 
   return(<>
@@ -37,7 +42,7 @@ export default function Recomendations({secTitle, moviesArray, onChange}) {
     >
       {moviesArray.map((movie, index)=>(
       <SwiperSlide key={index}>
-      <div className='mt-8 mx-auto w-[200px] h-[300px] flex flex-col mb-10 cursor-pointer' onClick={() => onChange(movie)}>
+      <div className='mt-8 mx-auto w-[200px] h-[300px] flex flex-col mb-10 cursor-pointer' onClick={() => handleMovieClick(movie)}>
           <img className='shadow-lg w-[200px] h-[250px]' src={movie.src} alt="" />
           <h2 className='text-white text-2xl text-start max-[80%]:'>{movie.title}</h2>
           <p className='text-white text-xs mt-1 text-start'>{movie.año}</p>

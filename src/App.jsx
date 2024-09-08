@@ -1,65 +1,33 @@
 import { useState } from 'react';
 import './App.css';
-import MoviesCont from './assets/components/MoviesCont';
-import Header from './assets/components/Header';
-import MoviePlayer from './assets/components/MoviePlayer';
-import Previews from './assets/components/Previews';
-import Footer from './assets/components/Footer';
-import Categories from './assets/components/Categories';
-import Recomendations from './assets/components/Recomendations';
-import { movies } from './api/moviesData';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Sangrientas from './pages/Sangrientas';
+import Thriller from './pages/Thriller';
+import Paranormal from './pages/Paranormal';
+import Criaturas from './pages/Criaturas';
+import Clasicas from './pages/Clasicas';
+
 
 function App() {
-  const [selectedMovie, setSelectedMovie] = useState(null);
-  const [movieTitle, setMovieTitle] = useState('');
-  // const [currentSlideIndex, setCurrentSlideIndex] = useState(5);
-  // const [currentMovie, setCurrentMovie] = useState(null); // State for current movie data
-
-  const handleMovieSelect = (movieUrl) => {
-    setSelectedMovie(movieUrl);
-    // setCurrentSlideIndex(movieUrlIndex);
-  };
-
-  const handleMovieTitle = (movieTitle) => {
-    setMovieTitle(movieTitle);
-  }
 
   // const handleMovieChange = (movie) => {
   //   setCurrentMovie(movie); // Update current movie data
   // };
 
   return (
+  <Router>
     <div className='bg-black h-[100vh] w-full overflow-x-hidden'>
-      {selectedMovie ? (
-        <MoviePlayer
-        movieSel={selectedMovie}
-        movieTitle={movieTitle}
-        setSelectedMovie={setSelectedMovie}
- />
-      ) : (
-        <>
-        <Header />
-        <Previews />
-        <MoviesCont
-          // onMovieSelect={handleMovieSelect}
-          // onMovieChange={handleMovieChange} // Pass the new callback prop
-          // initialSlide={currentSlideIndex}
-          // onChange={handleMovieSelect}
-          onMovieSelect={handleMovieSelect}
-          onMovieTitle={handleMovieTitle}
-        />
-        <Footer />
-        </>
-      )}
-      {/* <Categories categorie={'Criaturas'}>
-        <Recomendations
-        secTitle={'Prueba'}
-        moviesArray={movies}
-         />
-      </Categories>  */}
-      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/thriller" element={<Thriller />} />
+        <Route path="/paranormal" element={<Paranormal />} />
+        <Route path="/sangrientas" element={<Sangrientas />} />
+        <Route path="/criaturas" element={<Criaturas />} />
+        <Route path="/clasicas" element={<Clasicas />} />
+      </Routes> 
     </div>
-  );
+  </Router>);
 }
 
 export default App;
