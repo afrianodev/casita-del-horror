@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MoviePlayer from "../components/MoviePlayer";
-import { thrillerArray } from "../api/moviesData";
+import { thrillerArray, thriller10Array, thrillerTrastorArray, thrillerAsesinosArray } from "../api/moviesData";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -28,6 +28,21 @@ export default function Thriller() {
         <>
         <Header />
         <Categories categorie={'Thriller'}>
+            <Recomendations
+            secTitle={'Recomendaciones Thriller'}
+            moviesArray={thriller10Array}
+            onMovieSelect={handleMovieSelect}
+            onMovieTitle={handleMovieTitle} />
+            <Recomendations
+            secTitle={'Con Asesinos'}
+            moviesArray={thrillerAsesinosArray}
+            onMovieSelect={handleMovieSelect}
+            onMovieTitle={handleMovieTitle} />
+            <Recomendations
+            secTitle={'Con trastornados'}
+            moviesArray={thrillerTrastorArray}
+            onMovieSelect={handleMovieSelect}
+            onMovieTitle={handleMovieTitle} />
             <Recomendations
             secTitle={'Todas las de Thriller'}
             moviesArray={thrillerArray}

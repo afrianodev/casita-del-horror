@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { sangrientasArray } from "../api/moviesData";
+import { sangrientasArray, sangrientas10Array, sangrientasSlasherArray, sangrientasGoreArray } from "../api/moviesData";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -29,6 +29,21 @@ export default function Sangrientas() {
         <>
         <Header />
         <Categories categorie={'Sangrientas'}>
+            <Recomendations
+            secTitle={'Recomendaciones sangrientas'}
+            moviesArray={sangrientas10Array}
+            onMovieSelect={handleMovieSelect}
+            onMovieTitle={handleMovieTitle} />
+            <Recomendations
+            secTitle={'Slasher'}
+            moviesArray={sangrientasSlasherArray}
+            onMovieSelect={handleMovieSelect}
+            onMovieTitle={handleMovieTitle} />
+            <Recomendations
+            secTitle={'Más gore y extremas'}
+            moviesArray={sangrientasGoreArray}
+            onMovieSelect={handleMovieSelect}
+            onMovieTitle={handleMovieTitle} />
             <Recomendations
             secTitle={'Todas las sangrientas'}
             moviesArray={sangrientasArray}

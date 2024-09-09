@@ -4,10 +4,10 @@ import { Navigation, Keyboard, EffectCoverflow } from 'swiper/modules';
 export default function Recomendations({secTitle, moviesArray, onMovieSelect, onMovieTitle}) {
   const breakpoints = {
     200: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
-    850: {
-      slidesPerView: 3,
+    768: {
+      slidesPerView: 4,
     },
     1024: {
       slidesPerView: 5,
@@ -28,11 +28,12 @@ export default function Recomendations({secTitle, moviesArray, onMovieSelect, on
   <Swiper
       // effect={'coverflow'}
       grabCursor={true}
-      slidesPerView={5}
+      slidesPerView={1}
       loop={true}
       keyboard={{
         enabled: true,
       }}
+      breakpoints={breakpoints}
       // pagination={{
       //   clickable: true,
       // }}
