@@ -32,7 +32,8 @@ export default function Home() {
       ) : (
         <>
         <Header />
-        <Previews />
+        <Previews
+        onMovieSelect={handleMovieSelect} />
         <Recomendations 
         secTitle={'Recomendaciones random'}
         moviesArray={random10Movies}

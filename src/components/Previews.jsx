@@ -1,6 +1,12 @@
 import { movies } from "../api/moviesData"
 
-export default function Previews() {
+export default function Previews({onMovieSelect, onMovieTitle, onMovieSinopsis, onMovieAño, onMovieDirector}) {
+  const randomMovie = movies[Math.floor(Math.random() * movies.length)]
+
+  const handleMovieClick = (movie) => {
+    onMovieSelect(movie.url)
+  }
+
     return(
     <div className="relative h-[450px] md:h-[360px] lg:h-[400px] w-[100%] md:w-[100%] overflow-hidden mt-2">
         <iframe
@@ -15,19 +21,19 @@ export default function Previews() {
         {/* Overlay Content */}
         <div className="relative ml-[5%] md:ml-[25%] lg:ml-[32%] z-10 flex justify-center items-center w-full h-[450px] md:h-[360px] lg:h-[400px] gap-4">
           <div>
-            <img className="md:w-[350px] lg:w-[250px]" src={movies[0].src} alt={movies[0].title} />
+            <img className="md:w-[350px] lg:w-[250px]" src={randomMovie.src} alt={randomMovie.title} />
           </div>
           <div className="flex flex-col gap-1 md:gap-4">
-            <h1 className="text-[24px] font-bold md:text-4xl w-[80%] md:w-[35%]">{movies[0].title}</h1>
-            <p className="w-[80%] md:w-[35%] lg:w-[25%]">{movies[0].sinopsis}</p>
+            <h1 className="text-[24px] font-bold md:text-4xl w-[80%] md:w-[35%]">{randomMovie.title}</h1>
+            <p className="w-[80%] md:w-[35%] lg:w-[25%]">{randomMovie.sinopsis}</p>
             <div className="flex gap-2">
-              <p>{movies[0].año}</p>
-              <p>{movies[0].director}</p>
-              <p>{movies[0].duracion}</p>
+              <p>{randomMovie.año}</p>
+              <p>{randomMovie.director}</p>
+              <p>{randomMovie.duracion}</p>
             </div>
             <div className="flex gap-2">
-              <div className="text-white bg-red-900 w-[120px] text-center py-2 rounded-md cursor-pointer select-none">Ver Trailer</div>
-              <div className="text-white bg-black w-[120px] text-center py-2 rounded-md cursor-pointer select-none">Ver Película</div>
+              {/* <div className="text-white bg-red-900 w-[120px] text-center py-2 rounded-md cursor-pointer select-none">Ver Trailer</div> */}
+              <div className="text-white bg-black w-[120px] text-center py-2 rounded-md cursor-pointer select-none" onClick={()=>handleMovieClick(randomMovie)}>Ver Película</div>
             </div>
           </div>
         </div>
