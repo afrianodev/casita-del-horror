@@ -19,13 +19,13 @@ export default function Previews({onMovieSelect, onMovieTitle, onMovieSinopsis, 
         ></iframe>
   
         {/* Overlay Content */}
-        <div className="relative ml-[5%] md:ml-[25%] lg:ml-[32%] z-10 flex justify-center items-center w-full h-[450px] md:h-[360px] lg:h-[400px] gap-4">
-          <div>
-            <img className="md:w-[350px] lg:w-[250px]" src={randomMovie.src} alt={randomMovie.title} />
+        <div className="relative z-10 flex justify-center items-center w-full h-[450px] md:h-[360px] lg:h-[400px] gap-4 ml-[5%]">
+          <div className="w-[250px] h-[350px] md:w-[350px] md:h-[400px] lg:w-[250px] lg:h-[350px] flex justify-center items-center overflow-hidden">
+            <img className="w-[250px] h-[350px] object-cover" src={randomMovie.src} alt={randomMovie.title} />
           </div>
-          <div className="flex flex-col gap-1 md:gap-4">
-            <h1 className="text-[24px] font-bold md:text-4xl w-[80%] md:w-[35%]">{randomMovie.title}</h1>
-            <p className="w-[80%] md:w-[35%] lg:w-[25%]">{randomMovie.sinopsis}</p>
+          <div className="flex flex-col gap-1 md:gap-4 w-[350px]">
+            <h1 className="text-[24px] font-bold md:text-4xl w-[100%]">{randomMovie.title}</h1>
+            <p className="w-[100%]">{randomMovie.sinopsis}</p>
             <div className="flex gap-2">
               <p>{randomMovie.año}</p>
               <p>{randomMovie.director}</p>
