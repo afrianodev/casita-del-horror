@@ -9,6 +9,8 @@ import burgerIcon from '../assets/burger.svg';
 export default function Header() {
     const [deployMenu, setDeployMenu] = useState(false);
     const [deployFind, setDeployFind] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
+    const navigate = useNavigate();
 
     const HandleMenuClick = () => {
         setDeployMenu(prev => !prev)
@@ -16,6 +18,12 @@ export default function Header() {
 
     const HandleFindClick = () => {
         setDeployFind(prev => !prev)
+    }
+
+    const handleSearch = (e) => {
+        if (e.key === 'Enter') {
+            navigate(`/busqueda?q=${searchQuery}`); // Navigate to 'Busqueda' with search query
+        }
     }
 
     return(
@@ -37,7 +45,13 @@ export default function Header() {
             </ul>
             }
             {!deployFind ? <img src={findIcon} className='w-[20px] md:w-[20px] lg:w-[25px] cursor-pointer' onClick={HandleFindClick} /> : 
-            <div className='flex items-center'><input type="text" className='rounded-xl px-2 py-0 h-8' /><img src={closeIcon} className='w-[30px] ml-4 cursor-pointer select-none' onClick={HandleFindClick} alt="close icon" /></div>
+            <div className='flex items-center'>
+                <input type="text" className='rounded-xl px-2 py-0 h-8'
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)} // Update search query
+                onKeyDown={handleSearch} />
+                <img src={closeIcon} className='w-[30px] ml-4 cursor-pointer select-none' onClick={HandleFindClick} alt="close icon" />
+            </div>
             }
             
             </div>
