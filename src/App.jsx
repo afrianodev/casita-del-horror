@@ -7,6 +7,7 @@ import Thriller from './pages/Thriller';
 import Paranormal from './pages/Paranormal';
 import Criaturas from './pages/Criaturas';
 import Clasicas from './pages/Clasicas';
+import Busqueda from './pages/Busqueda';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/sangrientas" element={<Sangrientas />} />
         <Route path="/criaturas" element={<Criaturas />} />
         <Route path="/clasicas" element={<Clasicas />} />
+        <Route path="/busqueda" element={<Busqueda />} />
       </Routes> 
     </div>
   </Router>);

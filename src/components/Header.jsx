@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/casita.svg';
 import findIcon from '../assets/find-icon.svg';
 import { useState } from 'react';
