@@ -21,7 +21,7 @@ export default function Previews({onMovieSelect, onMovieTitle, onMovieSinopsis, 
         {/* Overlay Content */}
         <div className="relative z-10 flex justify-center items-center w-full h-[450px] md:h-[360px] lg:h-[400px] gap-4 ml-[5%]">
           <div className="w-[250px] h-[350px] md:w-[350px] md:h-[400px] lg:w-[250px] lg:h-[350px] flex justify-center items-center overflow-hidden">
-            <img className="w-[250px] h-[350px] object-cover" src={randomMovie.src} alt={randomMovie.title} />
+            <img className="w-[250px] h-[350px] object-cover" src={randomMovie.src} alt={randomMovie.title} loading="lazy" />
           </div>
           <div className="flex flex-col gap-1 md:gap-4 w-[350px]">
             <h1 className="text-[24px] font-bold md:text-4xl w-[100%]">{randomMovie.title}</h1>
