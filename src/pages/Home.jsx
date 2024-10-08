@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 
 import { useState } from "react"
 import Recomendations from "../components/Recomendations"
-import { random10Movies, randomMovies, pipeArray, eliArray } from "../api/moviesData"
+import { random10Movies, randomMovies, pipeArray, eliArray, ultimasMovies } from "../api/moviesData"
 
 export default function Home() {
     const [selectedMovie, setSelectedMovie] = useState(null);
@@ -34,6 +34,12 @@ export default function Home() {
         <Header />
         <Previews
         onMovieSelect={handleMovieSelect} />
+        <Recomendations
+        secTitle={'Nuevas'}
+        moviesArray={ultimasMovies}
+        onMovieSelect={handleMovieSelect}
+        onMovieTitle={handleMovieTitle}
+        />
         <Recomendations 
         secTitle={'Recomendaciones random'}
         moviesArray={random10Movies}

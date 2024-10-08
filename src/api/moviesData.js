@@ -276,6 +276,7 @@ export const movies = [
   }
 export let randomMovies = shuffleArray(movies);
 export let random10Movies = shuffleArray(movies).slice(0, 10);
+export let ultimasMovies = movies.slice(0,10);
 
 export let pipeArray = shuffleArray(movies.filter(movie => movie.categorias.includes('pipe')));
 export let eliArray = shuffleArray(movies.filter(movie => movie.categorias.includes('eli')));
