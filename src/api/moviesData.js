@@ -2,6 +2,18 @@
 
 
 export const movies = [
+  { src: "https://pics.filmaffinity.com/La_sustancia-970111010-large.jpg",
+    title: "La sustancia", url: "https://mega.nz/embed/XR5jCb7b#Qf71Vu_4cOTvT78jqR66UGtiKOGpkeg-7qSKwD7CRLQ", sinopsis: 'El terror corporal: La poderosa re-lectura feminista de Fargeat', año: 2024, director: 'Coralie Fargeat', duracion: 141+` min`, categorias: ['sangrienta'] },
+  { src: "https://www.ecartelera.com/carteles/17600/17686/001_m.jpg",
+    title: "Tin y Tina", url: "https://mega.nz/embed/uBIzBSTb#1iAJZQzPue8u5vQ0de2b53mwJL65q3YaJlNnU17avE8", sinopsis: 'Tras un trágico aborto, Lola y su marido deciden adoptar a Tin y Tina, unos angelicales hermanos con una educación ultracatólica que les induce a interpretar la Biblia de forma literal, sin distinguir lo que está bien de lo que está mal.', año: 2023, director: 'Rubin Stein', duracion: 119+` min`, categorias: ['asesinos', 'sangrienta'] },
+  { src: "https://m.media-amazon.com/images/M/MV5BM2YzNzY0ZjEtOWIzMy00MDZhLTg3MmQtYmM2Zjc3ODlkM2M0XkEyXkFqcGc@._V1_.jpg",
+    title: "Hex: Salto mortal", url: "https://mega.nz/embed/rZQECaDB#MjHp652ktJz0KsZLiIyhukU9JK86wqQaxY47Lbzpxy8", sinopsis: 'Tras una misteriosa desaparición en un salto, un grupo de paracaidistas experimenta sucesos paranormales que los tienen luchando por sus vidas.', año: 2022, director: 'Chris Johnston', duracion: 88+` min`, categorias: ['asesinos', 'sangrienta'] },
+  { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTa8lhmNx-UF7pJMgNDu0ZS_6_Q0Ksd2U-Ow&s",
+    title: "El Tunel", url: "https://mega.nz/embed/DJRT0Z5Q#BIMY63W4yEiKBQgtGFbJMV1MiZp4Virl09RKnD77SkM", sinopsis: 'Un hombre se dirige a casa cuando el túnel mal construido por el que conduce se derrumba, dejándolo atrapado.', año: 2016, director: 'Kim Seong-hun', duracion: 126+` min`, categorias: ['asesinos', 'sangrienta'] },
+  { src: "https://upload.wikimedia.org/wikipedia/en/5/52/Watcher_poster.jpeg",
+    title: "El observador", url: "https://mega.nz/embed/XYwSSYrD#KTCP3musDlF_nvT9Xj46O9JJzS3mKQ0yzlkbypfuN-0", sinopsis: 'Una joven se muda a un nuevo piso con su prometido solo para ser atormentada por la sensación de que un observador invisible la acecha en un edificio adyacente.', año: 2020, director: 'Chloe Okuno', duracion: 153+` min`, categorias: ['asesinos', 'sangrienta'] },
+  { src: "https://es.web.img2.acsta.net/pictures/22/12/05/18/32/5169034.png",
+    title: "Llaman a la puerta", url: "https://mega.nz/embed/HQgWgSpT#O50Bj83yz_jLmieSBiUQaSUZQMCLv0dqE8JeiKZNlXM", sinopsis: 'Cuatro desconocidos secuestran a una familia en una cabaña aislada. Los captores aseguran que tuvieron la misma premonición: si la familia no sacrifica a uno de sus miembros, el apocalipsis se desatará en forma de tsunamis, pandemia y oscuridad.', año: 2023, director: 'M. Night Shyamalan', duracion: 100+` min`, categorias: ['asesinos', 'sangrienta'] },
   { src: "https://m.media-amazon.com/images/S/pv-target-images/bcc47bd375b8eb12821e9b48ad05475eeb85e106efeb02cf1803b1f1b9d57ee3.jpg",
     title: "El coleccionista", url: "https://mega.nz/embed/j2oDzboD#zNEza5lFYFRwYqnQtiIpd5QOZridWD471Ptsi53htHE", sinopsis: 'Desesperado por pagar una deuda a su ex-esposa, un ex-convicto planea entrar a la casa de su empleador, sin percatarse de que un segundo criminal también tiene la propiedad en la mira, y llenado esta con una serie de trampas mortales.', año: 2009, director: 'Marcus Dunstan', duracion: 88+` min`, categorias: ['asesinos', 'sangrienta'] },
   { src: "https://pics.filmaffinity.com/sorry_charlie-680871566-large.jpg",
