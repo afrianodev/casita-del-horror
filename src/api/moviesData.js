@@ -2,6 +2,20 @@
 
 
 export const movies = [
+  { src: "https://static.cinepolis.com/resources/mx/movies/posters/414x603/39348-809979-20220512043823.jpg",
+    title: "Historias que no te atreves a contar", url: "https://mega.nz/embed/bF4ynCxQ#12lC5d07vdZZvZAs3BV7N2_-rIAczdTx3QvKDy5-fXA", sinopsis: 'El terror corporal: La poderosa re-lectura feminista de Fargeat', año: 2024, director: 'Coralie Fargeat', duracion: 141+` min`, categorias: ['sangrienta'] },
+  { src: "https://static.cinepolis.com/resources/mx/movies/posters/414x603/44938-217379-20231222011403.jpg",
+    title: "Sleep: el mal no duerme", url: "https://mega.nz/embed/TVhjlBza#LKHZVlb76jG11xsdACdKv4CzUxuEB-h3nJ8pvtq3S_I", sinopsis: 'El terror corporal: La poderosa re-lectura feminista de Fargeat', año: 2024, director: 'Coralie Fargeat', duracion: 141+` min`, categorias: ['sangrienta'] },
+  { src: "https://pics.filmaffinity.com/Libros_de_sangre-208146443-large.jpg",
+    title: "Libros de sangre", url: "https://mega.nz/embed/rcpkwaZC#LMbEODvEOSzmbxgNdHEwZKiyyakWmfncBaGAIOGypKA", sinopsis: 'El terror corporal: La poderosa re-lectura feminista de Fargeat', año: 2024, director: 'Coralie Fargeat', duracion: 141+` min`, categorias: ['sangrienta'] },
+  { src: "https://upload.wikimedia.org/wikipedia/en/6/60/Longlegs_film_poster.jpg",
+    title: "Longlegs", url: "https://mega.nz/embed/bVBHgRAS#G-y8JMIGmg3du2njLZkjrzEu5sLGyj87nWCMKddab2Q", sinopsis: 'El terror corporal: La poderosa re-lectura feminista de Fargeat', año: 2024, director: 'Coralie Fargeat', duracion: 141+` min`, categorias: ['sangrienta'] },
+  { src: "https://m.media-amazon.com/images/S/pv-target-images/1880e5b8e841e2973e8c352196a46ee4b0a5d5f9a1e9ee852265e2bdeeccbd5d.jpg",
+    title: "Los horrores de Caddo lake", url: "https://mega.nz/embed/rRBjkSDa#KyxEnrtGVQ1I_U47L38sRCr9c0ER6uopGpaNFfxehbo", sinopsis: 'El terror corporal: La poderosa re-lectura feminista de Fargeat', año: 2024, director: 'Coralie Fargeat', duracion: 141+` min`, categorias: ['sangrienta'] },
+  { src: "https://upload.wikimedia.org/wikipedia/en/thumb/0/06/MaXXXine_%28poster%29.jpg/220px-MaXXXine_%28poster%29.jpg",
+    title: "MaXXXine", url: "https://mega.nz/embed/qV5jADLY#jQ5HNRLh4rp62CuU2M_rq_6YDx1LwOqj5PGqkCEBYwg", sinopsis: 'El terror corporal: La poderosa re-lectura feminista de Fargeat', año: 2024, director: 'Coralie Fargeat', duracion: 141+` min`, categorias: ['sangrienta'] },
+  { src: "https://play-lh.googleusercontent.com/mgr_jCdl_bRum2O_o_TKvIkH30C6MjhaRDoFDyB4FrJaM49PQowLBn0xRwRYyVSy82riF7tH9bJE4kL-C_A",
+    title: "Un lugar secreto", url: "https://mega.nz/embed/vMZRhJwb#uoG0nqh6bivOw5Bn0zTtNjhaBfI8J1P56bO-gu09rEA", sinopsis: 'El terror corporal: La poderosa re-lectura feminista de Fargeat', año: 2024, director: 'Coralie Fargeat', duracion: 141+` min`, categorias: ['sangrienta'] },
   { src: "https://pics.filmaffinity.com/La_sustancia-970111010-large.jpg",
     title: "La sustancia", url: "https://mega.nz/embed/XR5jCb7b#Qf71Vu_4cOTvT78jqR66UGtiKOGpkeg-7qSKwD7CRLQ", sinopsis: 'El terror corporal: La poderosa re-lectura feminista de Fargeat', año: 2024, director: 'Coralie Fargeat', duracion: 141+` min`, categorias: ['sangrienta'] },
   { src: "https://www.ecartelera.com/carteles/17600/17686/001_m.jpg",
