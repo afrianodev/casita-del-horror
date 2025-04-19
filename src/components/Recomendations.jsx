@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Keyboard, EffectCoverflow } from 'swiper/modules';
 
-export default function Recomendations({secTitle, moviesArray, onMovieSelect, onMovieTitle}) {
+export default function Recomendations({secTitle, moviesArray, onMovieSelect, onMovieTitle, onOpen, onMoviePoster, onMovieSinopsis, onMovieYear}) {
   const breakpoints = {
     200: {
       slidesPerView: 2,
@@ -15,8 +15,12 @@ export default function Recomendations({secTitle, moviesArray, onMovieSelect, on
   };
 
   const handleMovieClick = (movie) => {
-    onMovieSelect(movie.url)
+    // onMovieSelect(movie.url)
     onMovieTitle(movie.title)
+    onOpen()
+    onMoviePoster(movie.src)
+    onMovieSinopsis(movie.sinopsis)
+    onMovieYear(movie.año)
   }
 
 
