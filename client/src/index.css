@@ -5,3 +5,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px; /* Adjust the width of the chatbot */
+  height: 500px; /* Adjust the height of the chatbot */
+  z-index: 9999; /* Make sure it's on top of other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: Customize the appearance of the df-messenger */
+df-messenger {
+  width: 100%;
+  height: 100%;
+}
