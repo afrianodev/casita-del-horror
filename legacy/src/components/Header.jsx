@@ -29,7 +29,7 @@ export default function Header() {
     return(
         <div className="select-none overflow-x-hidden h-[50px] w-[100vw] mt-[2%] bg-black rounded-xl flex justify-between px-2 md:px-6 lg:px-10">
             <Link to='/' className="flex gap-0 md:gap-2 justify-center items-center">
-                <h1 className="text-white text-lg md:text-xl lg:text-2xl">La Casita del Horror</h1>
+                <h1 className="text-white text-lg md:text-xl lg:text-2xl">(Este sitio pronto desaparecerá y solo quedará la nueva version)<span>Click para redirigir a nueva versión</span></h1>
                 <img src={logo} className="w-[35px] md:w-[40px] lg:w-[50px]" />
             </Link>
             <div className='flex gap-2'>
