@@ -16,7 +16,7 @@ const VideoIntro = ({ onVideoEnd }) => {
         </div>
       )}
       <video
-        className="w-[12.5%] h-auto max-w-xs max-h-[calc(100vh-2rem)] object-contain"
+        className="w-[30%] sm:w-[12.5%] h-auto max-w-xs max-h-[calc(100vh-2rem)] object-contain"
         autoPlay
         muted
         playsInline

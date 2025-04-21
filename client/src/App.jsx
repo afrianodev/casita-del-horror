@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import VideoIntro from "./components/VideoIntro"
+import Chatbot from './Chatbot';
 
 function App() {
   const [showVideoIntro, setShowVideoIntro] = useState(true);
@@ -13,7 +14,9 @@ function App() {
       {showVideoIntro ? (
         <VideoIntro onVideoEnd={handleVideoEnd} />
       ) : (
-        <h1>La casita del horror</h1>
+        <>
+        <Chatbot />
+        </>
       )}
     </div>
   );
