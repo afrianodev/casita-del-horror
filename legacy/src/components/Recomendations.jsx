@@ -15,7 +15,7 @@ export default function Recomendations({secTitle, moviesArray, onMovieSelect, on
   };
 
   const handleMovieClick = (movie) => {
-    // onMovieSelect(movie.url)
+    onMovieSelect(movie.url)
     onMovieTitle(movie.title)
     onOpen()
     onMoviePoster(movie.src)
