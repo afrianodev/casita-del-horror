@@ -1,7 +1,7 @@
 import { HttpError } from "../utils/httpError.js";
 
 /**
- * @param {import("express").ErrorRequestHandler} err
+ * @type {import("express").ErrorRequestHandler}
  */
 export function errorHandler(err, _req, res, _next) {
   if (err instanceof HttpError) {
